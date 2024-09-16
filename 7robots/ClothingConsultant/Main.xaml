@@ -132,7 +132,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Scrape weather details" sap:VirtualizedContainerService.HintSize="416,1372" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Scrape weather details" sap:VirtualizedContainerService.HintSize="416,1393" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -165,7 +165,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NKeyboardShortcuts.VerifyOptions>
             </uix:NKeyboardShortcuts>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+            <ui:CommentOut DisplayName="Click on search button" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,304" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
@@ -208,7 +208,7 @@
                 <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=london+temperature+in+fahrenheit&amp;rlz=1C1YTUH_esCO1014CO1014&amp;oq=london+temperature+in+f&amp;gs_lcrp=EgZjaHJvbWUqBwgCEAAYgAQyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDkyMjhqMGo3qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="558bf739-3c68-4787-82da-718831284cd2" ContentHash="-ueB3EBRYECe3feMgur1Kg" CvTextArea="683, 425, 84, 16" CvType="AnyWordGroup" DesignTimeRectangle="684, 424, 82, 16" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='wob_dc' tag='SPAN' type='' class='' /&gt;" Guid="a4e8984d-a9b0-44ff-8734-a41f6c25c35d" InformativeScreenshot="a76a365e65afa0e2370109a9c9380039.png" Reference="9YRfnfuKd0yyS2gf9YiBdA/d6Uz7swEPkKCaasSwDjqtg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='london temperature in fahrenheit - Google Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NGetText.Target>
             </uix:NGetText>
-            <ui:LogMessage DisplayName="Log City Weather" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;The city weather is: &quot; + CityWeather]" />
+            <ui:LogMessage DisplayName="Log City Weather" sap:VirtualizedContainerService.HintSize="354,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;The city weather is: &quot; + CityWeather]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
