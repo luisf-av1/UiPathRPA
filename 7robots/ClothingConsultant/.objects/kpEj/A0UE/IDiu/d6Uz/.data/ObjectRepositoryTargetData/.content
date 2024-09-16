@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-ueB3EBRYECe3feMgur1Kg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.google.com/search?q=london+temperature+in+fahrenheit&amp;rlz=1C1YTUH_esCO1014CO1014&amp;oq=london+temperature+in+f&amp;gs_lcrp=EgZjaHJvbWUqBwgCEAAYgAQyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDkyMjhqMGo3qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="558bf739-3c68-4787-82da-718831284cd2" CvTextArea="683, 425, 84, 16" CvType="AnyWordGroup" DesignTimeRectangle="684, 424, 82, 16" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='wob_dc' tag='SPAN' type='' class='' /&gt;" Guid="a4e8984d-a9b0-44ff-8734-a41f6c25c35d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='london temperature in fahrenheit - Google Search' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a76a365e65afa0e2370109a9c9380039.png" xmlns="">0hBfvl3hyb0CI4AUiWHMCkg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

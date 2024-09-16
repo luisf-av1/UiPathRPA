@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Scrape weather details",
+  "Type": "App",
+  "Id": "kpEjksHCS0qc_8ibuzcQNw",
+  "Reference": "9YRfnfuKd0yyS2gf9YiBdA/kpEjksHCS0qc_8ibuzcQNw",
+  "Created": "2024-09-16T11:41:39.8974676Z",
+  "Updated": "2024-09-16T11:41:39.8974676Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

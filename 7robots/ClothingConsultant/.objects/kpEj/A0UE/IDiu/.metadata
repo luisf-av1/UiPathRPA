@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Scrape weather details",
+  "Type": "Screen",
+  "Id": "IDiug1fKkU-9WiTOItPKZA",
+  "Reference": "9YRfnfuKd0yyS2gf9YiBdA/IDiug1fKkU-9WiTOItPKZA",
+  "ParentRef": "9YRfnfuKd0yyS2gf9YiBdA/A0UEXt91IUWe7eIR9oQ4yA",
+  "Created": "2024-09-16T11:41:39.9765753Z",
+  "Updated": "2024-09-16T11:41:39.9765753Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
