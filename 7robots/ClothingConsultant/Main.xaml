@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="502,1437" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="502,1874" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -38,6 +38,9 @@
       <x:String>System.Security</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -99,7 +102,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="512,1372" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="512,1809" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="CityName" />
     </Sequence.Variables>
@@ -113,14 +116,17 @@
         <OutArgument x:TypeArguments="x:String">[CityName]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <WriteLine DisplayName="Write City Name" sap:VirtualizedContainerService.HintSize="450,122" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;The city name is: &quot; + CityName]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Google" sap:VirtualizedContainerService.HintSize="450,891" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f1ad1425-61d4-4567-9801-a6f114a8c067" Version="V2" WindowResize="Maximize">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;The city name is: &quot; + CityName]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Google" sap:VirtualizedContainerService.HintSize="450,1277" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f1ad1425-61d4-4567-9801-a6f114a8c067" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,651" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1037" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="CityTemperature" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -141,16 +147,31 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts to perform search" sap:VirtualizedContainerService.HintSize="354,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" InteractionMode="DebuggerApi" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+              <uix:NKeyboardShortcuts.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,326" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,304" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,238" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="DebuggerApi" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
-                    <uix:NKeyboardShortcuts.VerifyOptions>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Google Search'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1ad1425-61d4-4567-9801-a6f114a8c067" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.google.com/" CVScreenId="6a1d9e53-7b4f-4e05-95c3-40b2d8f50b83" CvElementArea="562, 409, 117, 36" CvTextArea="578, 419, 86, 16" CvTextArgument="Google Search" CvType="Button" DesignTimeRectangle="564, 411, 115, 32" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-role='button' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;center&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' type='submit' tag='INPUT' class='gNO89b' aaname='Google Search' check:text='Google Search' /&gt;" Guid="583fbf86-a4fd-4e11-abe2-8c97bf17e4c9" InformativeScreenshot="aa3cb07f343bf86aa4441f6246070486.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
                       <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                         <uix:VerifyExecutionOptions.Retry>
                           <InArgument x:TypeArguments="x:Boolean" />
@@ -159,8 +180,8 @@
                           <InArgument x:TypeArguments="x:Double" />
                         </uix:VerifyExecutionOptions.Timeout>
                       </uix:VerifyExecutionOptions>
-                    </uix:NKeyboardShortcuts.VerifyOptions>
-                  </uix:NKeyboardShortcuts>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
                 </Sequence>
               </ui:CommentOut.Body>
               <sap:WorkflowViewStateService.ViewState>
@@ -170,21 +191,12 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Google Search'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f1ad1425-61d4-4567-9801-a6f114a8c067" Version="V4">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.google.com/" CVScreenId="6a1d9e53-7b4f-4e05-95c3-40b2d8f50b83" CvElementArea="562, 409, 117, 36" CvTextArea="578, 419, 86, 16" CvTextArgument="Google Search" CvType="Button" DesignTimeRectangle="564, 411, 115, 32" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-role='button' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;center&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' type='submit' tag='INPUT' class='gNO89b' aaname='Google Search' check:text='Google Search' /&gt;" Guid="583fbf86-a4fd-4e11-abe2-8c97bf17e4c9" InformativeScreenshot="aa3cb07f343bf86aa4441f6246070486.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
+            <uix:NGetText DisplayName="Get Temperature" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="f1ad1425-61d4-4567-9801-a6f114a8c067" TextString="[CityTemperature]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=weather+in+cairo+in+fahrenheit&amp;sca_esv=49379c0f9d17fa5a&amp;source=hp&amp;ei=1W3nZqC2M5WrwbkP0oqUkAo&amp;iflsig=AL9hbdgAAAAAZud75Y1O0dypW6tbZYMZttITfKp4F-Jm&amp;oq=Weather+in+Cairo+in+Fahrenheit&amp;gs_lp=Egdnd3Mtd2l6Ih5XZWF0aGVyIGluIENhaXJvIGluIEZhaHJlbmhlaXQqAggAMgoQABiABBhGGIACMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCBAAGIAEGKIEMggQABiABBiiBEjiDVAAWLkEcAB4AJABAZgB6QGgAaUGqgEFMC4zLjG4AQHIAQD4AQGYAgOgAtgEwgIFEAAYgASYAwCSBwUwLjEuMqAHsBk&amp;sclient=gws-wiz" CVScreenId="18e65858-520e-4892-99ff-2398bc83af3f" CvTextArea="241, 389, 54, 35" CvType="AnyWordGroup" DesignTimeRectangle="243, 380, 51, 54" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FullSelectorArgument="&lt;webctrl id='wob_tm' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='wob_tm' tag='SPAN' type='' class='wob_t q8U8x' /&gt;" Guid="5f8fa399-1250-42d1-87fe-c58952c815ba" ImageBase64="" InformativeScreenshot="82666a361369ef2a47638deea2da6445.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='weather in cairo in fahrenheit - Google Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;The city temperature is: &quot; + CityTemperature]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
