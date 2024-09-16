@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="502,1155" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="502,1402" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -99,7 +99,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="512,1090" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="512,1337" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="CityName" />
     </Sequence.Variables>
@@ -114,19 +114,19 @@
       </ui:InputDialog.Result>
     </ui:InputDialog>
     <WriteLine DisplayName="Write City Name" sap:VirtualizedContainerService.HintSize="450,122" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;The city name is: &quot; + CityName]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Google" sap:VirtualizedContainerService.HintSize="450,609" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f1ad1425-61d4-4567-9801-a6f114a8c067" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Google" sap:VirtualizedContainerService.HintSize="450,856" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f1ad1425-61d4-4567-9801-a6f114a8c067" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,369" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,616" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEXTAREA APjFqb'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,279" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f1ad1425-61d4-4567-9801-a6f114a8c067" Text="[&quot;Weather in &quot; + CityName + &quot; in fahrenheit&quot;]" Version="V4">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Google search bar" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f1ad1425-61d4-4567-9801-a6f114a8c067" Text="[&quot;Weather in &quot; + CityName + &quot; in Fahrenheit&quot;]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.google.com/" CVScreenId="2ade7a47-ff9a-482d-8449-254f6bf03e52" CvElementArea="427, 339, 528, 47" CvType="InputBox" DesignTimeRectangle="471, 342, 399, 42" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='APjFqb' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='APjFqb' tag='TEXTAREA' type='' class='gLFyf' aaname='Search' /&gt;" Guid="3a2ba961-3148-4e2f-8a6d-0c3dc93f6c36" InformativeScreenshot="18096a5f0257d99cf5d79e925a10115d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Google' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NTypeInto.Target>
@@ -141,6 +141,18 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,240" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="DebuggerApi" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+              <uix:NKeyboardShortcuts.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
