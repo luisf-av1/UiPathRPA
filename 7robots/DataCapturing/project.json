@@ -1,7 +1,7 @@
 {
   "name": "DataCapturing",
-  "projectId": "ffb2a257-13ff-43d2-a22e-366d768029f6",
-  "description": "Captures data into web and desktop app, simultaneously.",
+  "projectId": "ebaf1145-a639-43f4-ab76-153c9e3928ea",
+  "description": "Robot to cature data in web and desktop, simultaneusly ",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.0-preview]",
@@ -50,7 +50,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "92c2fd03-7d8b-422b-a0f1-db6b66b6a42a",
+      "uniqueId": "2ef482c1-04df-460e-bbf7-467bc928964f",
       "input": [],
       "output": []
     }
