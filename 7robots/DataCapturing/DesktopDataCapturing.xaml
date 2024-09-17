@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="DesktopDataCapturing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="678,1996" sap2010:WorkflowViewState.IdRef="DesktopDataCapturing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="DesktopDataCapturing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="692,2013" sap2010:WorkflowViewState.IdRef="DesktopDataCapturing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -113,9 +113,9 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DesktopDataCapturing" sap:VirtualizedContainerService.HintSize="688,1931" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DesktopDataCapturing" sap:VirtualizedContainerService.HintSize="688,1948" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="CustomerData" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_CustomerData" />
       <Variable x:TypeArguments="x:Int32" Name="RowNumber" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -123,23 +123,23 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[CustomerData]" DisplayName="Read Customer data from excel sheet" sap:VirtualizedContainerService.HintSize="626,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="resources\customers.xlsx" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_CustomerData]" DisplayName="Read Customer data from excel sheet" sap:VirtualizedContainerService.HintSize="626,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="resources\customers.xlsx" />
     <ui:Comment DisplayName="Comment to run the app" sap:VirtualizedContainerService.HintSize="626,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Execute the app inside the resources folder" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Desktop Application: explorer.exe" sap:VirtualizedContainerService.HintSize="626,1635" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="d8b29d94-4dce-4308-ba66-2f4af6e5ff0d" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Desktop Application: explorer.exe" sap:VirtualizedContainerService.HintSize="626,1652" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="d8b29d94-4dce-4308-ba66-2f4af6e5ff0d" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Proces customers data" sap:VirtualizedContainerService.HintSize="592,1281" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Proces customers data" sap:VirtualizedContainerService.HintSize="592,1338" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="530,1221" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[RowNumber &lt; dt_CustomerData.RowCount]" DisplayName="While Rows to process" sap:VirtualizedContainerService.HintSize="530,1221" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1107" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Process Data" sap:VirtualizedContainerService.HintSize="496,1107" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </Sequence.Variables>
@@ -153,10 +153,10 @@
                       <OutArgument x:TypeArguments="sd:DataRow">[CurrentRow]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="sd:DataRow">[CustomerData.Rows(RowNumber)]</InArgument>
+                      <InArgument x:TypeArguments="sd:DataRow">[dt_CustomerData.Rows(RowNumber)]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <ui:LogMessage DisplayName="Log Customer's full name" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Customer info: &quot; &amp; vbCrLf &amp;&#xD;&#xA;&quot;Customer number: &quot; +  RowNumber.ToString &amp; vbCrLf &amp;&#xD;&#xA;&quot;first name: &quot; &amp; CurrentRow(&quot;first name&quot;).ToString &amp; vbCrLf &amp;&#xD;&#xA;&quot;last name: &quot; &amp; CurrentRow(&quot;last name&quot;).ToString]" />
+                  <ui:LogMessage DisplayName="Log Customer's full name" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Customer info: &quot; &amp; vbCrLf &amp;&#xA;&quot;Customer number: &quot; +  RowNumber.ToString &amp; vbCrLf &amp;&#xA;&quot;first name: &quot; &amp; CurrentRow(&quot;first name&quot;).ToString &amp; vbCrLf &amp;&#xA;&quot;last name: &quot; &amp; CurrentRow(&quot;last name&quot;).ToString]" />
                   <Assign DisplayName="Increase Row index" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[RowNumber]</OutArgument>
@@ -169,7 +169,7 @@
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable CVScreenId="3d9caa03-def7-4ab6-8702-52f8c895dd8b" CvElementArea="201, 118, 181, 21" CvType="InputBox" DesignTimeRectangle="201, 119, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='textBox1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='textBox1' /&gt;" Guid="7255a882-543c-4502-a085-fe881e3b4a76" InformativeScreenshot="d92e6910d4993ad4456bd95723c1fe03.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="3d9caa03-def7-4ab6-8702-52f8c895dd8b" CvTextArea="117, 122, 57, 12" CvTextArgument="First Name :" CvType="Text" DesignTimeRectangle="115, 122, 63, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='label2' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='label2' check:text='First Name :' /&gt;" Guid="bf5eb17d-2e39-4e93-8042-404c144399d4" SearchSteps="Selector, FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -196,7 +196,7 @@
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvElementArea="530, 118, 181, 23" CvType="InputBox" DesignTimeRectangle="531, 119, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='textBox2' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='textBox2' /&gt;" Guid="4b73e795-0de8-4fe6-8fa9-17aeb010875b" InformativeScreenshot="7b19a1399d2fc7099f0cc74a660c1337.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvTextArea="454, 122, 58, 12" CvTextArgument="Last Name :" CvType="Text" DesignTimeRectangle="452, 122, 64, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='label3' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel1' /&gt;&lt;wnd ctrlname='label3' check:text='Last Name :' /&gt;" Guid="14449e02-56ea-4de1-8ac9-65ca1ce8c274" SearchSteps="Selector, FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -279,7 +279,7 @@
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvElementArea="200, 228, 181, 22" CvType="InputBox" DesignTimeRectangle="201, 229, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='textBox3' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='textBox3' /&gt;" Guid="9e8e52c9-c878-4936-8b03-83f2070e95a1" InformativeScreenshot="40cf3c825ea060f7107a85554ed90973.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvTextArea="119, 232, 46, 12" CvTextArgument="Address :" CvType="Text" DesignTimeRectangle="118, 232, 51, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='label5' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='label5' check:text='Address :' /&gt;" Guid="a46716de-d7a1-435a-b0fe-e0515d980254" SearchSteps="Selector, FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -306,7 +306,7 @@
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvElementArea="531, 228, 181, 22" CvType="InputBox" DesignTimeRectangle="531, 229, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='textBox4' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='textBox4' /&gt;" Guid="7790b68e-0222-4f32-9aa4-9f338bd9800b" InformativeScreenshot="3ac44d9f891336a1d4658975e965cd84.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvTextArea="453, 232, 25, 14" CvTextArgument="City :" CvType="Text" DesignTimeRectangle="452, 232, 30, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='label6' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='label6' check:text='City :' /&gt;" Guid="a89cbf06-773e-4d6e-82ca-dcba55ba1d00" SearchSteps="Selector, FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -387,7 +387,7 @@
                     <uix:NSelectItem.Target>
                       <uix:TargetAnchorable CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvElementArea="200, 263, 181, 23" CvType="InputBox" DesignTimeRectangle="201, 264, 180, 21" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='comboBox1' /&gt;&lt;ctrl name='State :' role='combo box' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='comboBox1' /&gt;&lt;ctrl name='State :' role='combo box' automationid='' /&gt;" Guid="273d5b1f-6666-4017-acd0-caa3d5f7d4f1" InformativeScreenshot="8f56dba81d734cc9e232010618b65f27.png" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvTextArea="120, 267, 32, 12" CvTextArgument="State :" CvType="Text" DesignTimeRectangle="118, 267, 38, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='label7' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='label7' check:text='State :' /&gt;" Guid="d9877a47-a22b-4904-8a4c-b1cee71b3ef7" SearchSteps="Selector, FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -404,7 +404,7 @@
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvElementArea="201, 341, 181, 22" CvType="InputBox" DesignTimeRectangle="201, 342, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='textBox5' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='textBox5' /&gt;" Guid="4ac64eb0-32e9-4270-a736-f3275df72c77" InformativeScreenshot="8db5ca334a090d005a80fbb4ea190cff.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvTextArea="117, 345, 69, 12" CvTextArgument="Home Phone :" CvType="Text" DesignTimeRectangle="115, 345, 75, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='label8' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='label8' check:text='Home Phone :' /&gt;" Guid="ed4d19d8-31e3-476b-a8fd-d9512e8e1db0" SearchSteps="Selector, FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -431,7 +431,7 @@
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvElementArea="531, 341, 180, 22" CvType="InputBox" DesignTimeRectangle="531, 342, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='textBox6' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='textBox6' /&gt;" Guid="03135420-e576-4b4c-aabb-0e3016776cc6" InformativeScreenshot="1f0f3b2f6ab638fdb9437366a1537803.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvTextArea="453, 345, 68, 13" CvTextArgument="Work Phone :" CvType="Text" DesignTimeRectangle="452, 345, 73, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='label9' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='label9' check:text='Work Phone :' /&gt;" Guid="ae203b0b-bd3b-4957-94b9-570d1a39a1e4" SearchSteps="Selector, FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -458,7 +458,7 @@
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvElementArea="201, 417, 181, 22" CvType="InputBox" DesignTimeRectangle="201, 418, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='textBox8' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='textBox8' /&gt;" Guid="4f606fb3-e157-4a97-804a-bd9466876d91" InformativeScreenshot="a6e7d8fe57f98587733d05e6a76a7c81.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvTextArea="117, 421, 76, 12" CvTextArgument="Personal Email :" CvType="Text" DesignTimeRectangle="115, 421, 82, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='label11' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='label11' check:text='Personal Email :' /&gt;" Guid="abab24e7-903e-41a1-aff1-8ed9db7087e1" SearchSteps="Selector, FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -485,7 +485,7 @@
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvElementArea="531, 417, 180, 22" CvType="InputBox" DesignTimeRectangle="531, 418, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='textBox7' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='textBox7' /&gt;" Guid="f768a8bb-fd5d-41a6-86d7-92c54e9de63c" InformativeScreenshot="2aefb2458e4c85c0d5b6a27936aeea89.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                             <uix:Target CVScreenId="75486274-2772-4a37-9839-864ef898efb9" CvTextArea="453, 421, 62, 12" CvTextArgument="Work Email :" CvType="Text" DesignTimeRectangle="452, 421, 67, 13" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='label10' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='label10' check:text='Work Email :' /&gt;" Guid="534cf6d4-0ae5-4669-a7e3-3162a2159f2d" SearchSteps="Selector, FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
@@ -531,9 +531,6 @@
                   </uix:NClick>
                 </Sequence>
               </ui:InterruptibleWhile.Body>
-              <ui:InterruptibleWhile.Condition>
-                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="RowNumber &lt; CustomerData.RowCount" />
-              </ui:InterruptibleWhile.Condition>
             </ui:InterruptibleWhile>
           </Sequence>
         </ActivityAction>
