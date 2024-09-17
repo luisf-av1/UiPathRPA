@@ -20,8 +20,8 @@
       "Path": "WebDataCapturing.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "index&Sequence_1",
-        "CustomerData&Sequence_1"
+        "dt_CustomerData&Sequence_1",
+        "index&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -31,7 +31,9 @@
       "Path": "DesktopDataCapturing.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "CustomerData&Sequence_1"
+        "dt_CustomerData&Sequence_1",
+        "RowNumber&Sequence_1",
+        "CurrentRow&Sequence_3"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
