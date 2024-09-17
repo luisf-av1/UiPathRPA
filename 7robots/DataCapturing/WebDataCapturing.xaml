@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="WebDataCapturing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="699,1154" sap2010:WorkflowViewState.IdRef="WebDataCapturing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="WebDataCapturing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="699,3014" sap2010:WorkflowViewState.IdRef="WebDataCapturing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -112,7 +112,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="WebDataCapturing" sap:VirtualizedContainerService.HintSize="608,1089" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="WebDataCapturing" sap:VirtualizedContainerService.HintSize="704,2949" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="CustomerData" />
       <Variable x:TypeArguments="x:Int32" Name="index">
@@ -129,38 +129,38 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[CustomerData]" DisplayName="Read Customer data from excel sheet" sap:VirtualizedContainerService.HintSize="546,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet1" WorkbookPath="resources\customers.xlsx" />
-    <ui:Comment DisplayName="Comment to sign up in web app" sap:VirtualizedContainerService.HintSize="546,108" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Sign up to: https://www.theautomationchallenge.com/crm" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: CRM app" sap:VirtualizedContainerService.HintSize="546,1547" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="8c614863-db10-40d5-83bf-051b85835572" Version="V2">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[CustomerData]" DisplayName="Read Customer data from excel sheet" sap:VirtualizedContainerService.HintSize="642,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Sheet1" WorkbookPath="resources\customers.xlsx" />
+    <ui:Comment DisplayName="Comment to sign up in web app" sap:VirtualizedContainerService.HintSize="642,107" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Sign up to: https://www.theautomationchallenge.com/crm" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: CRM app" sap:VirtualizedContainerService.HintSize="642,2634" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="8c614863-db10-40d5-83bf-051b85835572" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Proces customers data" sap:VirtualizedContainerService.HintSize="512,1330" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Proces customers data" sap:VirtualizedContainerService.HintSize="608,2394" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[CustomerData]" DisplayName="For Each Row in CustomerData" sap:VirtualizedContainerService.HintSize="450,1240" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[CustomerData]" DisplayName="For Each Row in CustomerData" sap:VirtualizedContainerService.HintSize="546,2304" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Capture customer data" sap:VirtualizedContainerService.HintSize="416,1051" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Capture customer data" sap:VirtualizedContainerService.HintSize="512,2115" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Customer's full name" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Customer info: &quot; &amp; vbCrLf &amp;&#xD;&#xA;&quot;Customer number: &quot; +  index.ToString &amp; vbCrLf &amp;&#xD;&#xA;&quot;first name: &quot; &amp; CurrentRow(&quot;first name&quot;).ToString &amp; vbCrLf &amp;&#xD;&#xA;&quot;last name: &quot; &amp; CurrentRow(&quot;last name&quot;).ToString]" />
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type First Name Into 'First' Input" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8c614863-db10-40d5-83bf-051b85835572" Text="[CurrentRow(&quot;first name&quot;).ToString]" Version="V4">
+                    <ui:LogMessage DisplayName="Log Customer's full name" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Customer info: &quot; &amp; vbCrLf &amp;&#xA;&quot;Customer number: &quot; +  index.ToString &amp; vbCrLf &amp;&#xA;&quot;first name: &quot; &amp; CurrentRow(&quot;first name&quot;).ToString &amp; vbCrLf &amp;&#xA;&quot;last name: &quot; &amp; CurrentRow(&quot;last name&quot;).ToString]" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type First Name Into 'First' Input" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8c614863-db10-40d5-83bf-051b85835572" Text="[CurrentRow(&quot;first name&quot;).ToString]" Version="V4">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CVScreenId="e3849bd5-a52d-4489-b75a-3f82eafb4b34" CvElementArea="132, 343, 213, 34" CvType="InputBox" DesignTimeRectangle="134, 344, 209, 31" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='input' class='bubble-element Input a1726527887615x1576' aaname='' /&gt;" Guid="5d8b8c6f-bbf7-4944-aa3e-3babccaf94fd" InformativeScreenshot="1bf152af06013e95749a932bad8c681e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target CVScreenId="e3849bd5-a52d-4489-b75a-3f82eafb4b34" CvTextArea="85, 346, 34, 14" CvTextArgument="First:" CvType="Text" DesignTimeRectangle="85, 344, 49, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='First:' class='content' tag='DIV' type='' check:innerText='First:' /&gt;" Guid="eb45cf49-6af3-45df-9f7e-e55b02693d72" SearchSteps="FuzzySelector, CV" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -177,11 +177,11 @@
                         </uix:VerifyExecutionTypeIntoOptions>
                       </uix:NTypeInto.VerifyOptions>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Last Name Into 'Last' Input" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="8c614863-db10-40d5-83bf-051b85835572" Text="[CurrentRow(&quot;last name&quot;).ToString]" Version="V4">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Last Name Into 'Last' Input" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="8c614863-db10-40d5-83bf-051b85835572" Text="[CurrentRow(&quot;last name&quot;).ToString]" Version="V4">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CVScreenId="2d81bbd1-b7bd-42ae-8b8f-524e656dd412" CvElementArea="132, 307, 213, 33" CvType="InputBox" DesignTimeRectangle="134, 309, 209, 30" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='4' tag='INPUT' type='input' class='bubble-element Input a1726527887615x1576' aaname='' /&gt;" Guid="db03a107-89f2-4e47-9b1f-5406c1e4e6b2" InformativeScreenshot="13a89f431aa4b349f1595b2bc2c30db7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target CVScreenId="2d81bbd1-b7bd-42ae-8b8f-524e656dd412" CvTextArea="85, 311, 32, 14" CvTextArgument="Last:" CvType="Text" DesignTimeRectangle="85, 309, 49, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Last:' class='content' tag='DIV' type='' check:innerText='Last:' /&gt;" Guid="7f1d5b6f-d6c9-4934-a379-04945019df88" SearchSteps="FuzzySelector, CV" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -198,7 +198,78 @@
                         </uix:VerifyExecutionTypeIntoOptions>
                       </uix:NTypeInto.VerifyOptions>
                     </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to add customer to web system" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8c614863-db10-40d5-83bf-051b85835572" Version="V4">
+                    <If Condition="[CurrentRow(2).ToString = &quot;Male&quot;]" sap:VirtualizedContainerService.HintSize="450,778" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,304" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Male'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8c614863-db10-40d5-83bf-051b85835572" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CVScreenId="6704ad41-9d54-455b-bc41-056146b0959f" CvTextArea="187, 428, 27, 12" CvTextArgument="Male" CvType="Text" DesignTimeRectangle="183, 428, 123, 12" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Male' check:innerText='Male' /&gt;" Guid="84a4ace5-207d-4d92-8bf4-891fe88116b2" InformativeScreenshot="02e4ff0fdd0d3d2a1e80be49d0e14ca2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,304" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Female'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8c614863-db10-40d5-83bf-051b85835572" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CVScreenId="63bed3b1-7e95-49be-891f-872f8d46198f" CvTextArea="187, 451, 41, 12" CvTextArgument="Female" CvType="Text" DesignTimeRectangle="183, 451, 123, 13" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Female' tag='LABEL' type='' class='' check:innerText='Female' /&gt;" Guid="793aeb04-9548-4d85-ba38-acab6eed8d8b" InformativeScreenshot="fe6e10feffbf44db58838e04bffa79c1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type address Into 'Address' input" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="8c614863-db10-40d5-83bf-051b85835572" Text="[CurrentRow(&quot;address&quot;).ToString]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CVScreenId="63bed3b1-7e95-49be-891f-872f8d46198f" CvElementArea="482, 343, 182, 34" CvType="InputBox" DesignTimeRectangle="484, 344, 179, 31" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='7' tag='INPUT' type='input' class='bubble-element Input a1726538089377x1697' aaname='' /&gt;" Guid="893b7169-508b-4964-8781-bc4b239a8715" InformativeScreenshot="b9b8765ea8dfddb621f68bc0501375b5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="63bed3b1-7e95-49be-891f-872f8d46198f" CvTextArea="404, 346, 56, 14" CvTextArgument="Address:" CvType="Text" DesignTimeRectangle="405, 344, 79, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Address: ' class='content' tag='DIV' type='' check:innerText='Address:' /&gt;" Guid="ade661f3-d859-478e-be95-9b05c4f19793" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click to add customer to web system" sap:VirtualizedContainerService.HintSize="450,216" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8c614863-db10-40d5-83bf-051b85835572" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/crm" CVScreenId="f3f9bacb-c9f8-42a8-9b39-8da675f0c81d" CvElementArea="105, 490, 88, 31" CvTextArea="133, 500, 29, 12" CvTextArgument="Add" CvType="Button" DesignTimeRectangle="108, 493, 82, 25" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Add' tag='BUTTON' type='' class='bubble-element Button clickable-element' check:innerText='Add' /&gt;" Guid="bceec2bd-9240-48f6-9300-d6b931f458cd" InformativeScreenshot="a0ba4cb65b4cba3bb3042d0925d4e9f9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
