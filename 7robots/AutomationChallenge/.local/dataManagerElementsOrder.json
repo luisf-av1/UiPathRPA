@@ -12,7 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "TextData&Sequence_1",
+        "IsFirstRun&Sequence_6",
         "dt_CompanyData&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
