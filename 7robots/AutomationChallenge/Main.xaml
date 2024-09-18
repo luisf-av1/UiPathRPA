@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="692,1963" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="692,1677" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -113,7 +113,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="692,1898" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="688,1612" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_CompanyData" />
       <Variable x:TypeArguments="x:String" Name="TextData" />
@@ -124,7 +124,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope to process data" sap:VirtualizedContainerService.HintSize="630,57" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope to process data" sap:VirtualizedContainerService.HintSize="626,57" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
@@ -163,20 +163,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ueab:ExcelProcessScopeX>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: The Automation Challenge app" sap:VirtualizedContainerService.HintSize="630,1753" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="06059737-446a-4d8f-aa69-32dbee847925" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: The Automation Challenge app" sap:VirtualizedContainerService.HintSize="626,1467" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="06059737-446a-4d8f-aa69-32dbee847925" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Interact with app" sap:VirtualizedContainerService.HintSize="596,1513" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Interact with app" sap:VirtualizedContainerService.HintSize="592,1227" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Zoom in app" sap:VirtualizedContainerService.HintSize="534,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="SameAsCard" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Shortcuts="[d(hk)][d(ctrl)][k(ins)][u(ctrl)][u(hk)]" Version="V4">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Zoom in app" sap:VirtualizedContainerService.HintSize="530,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="SameAsCard" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Shortcuts="[d(hk)][d(ctrl)][k(ins)][u(ctrl)][u(hk)]" Version="V4">
               <uix:NKeyboardShortcuts.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionOptions.Retry>
@@ -194,7 +194,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <uix:NNavigateBrowser Action="Refresh" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="534,57" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V4">
+            <uix:NNavigateBrowser Action="Refresh" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="530,57" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -202,7 +202,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NNavigateBrowser>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start Button" sap:VirtualizedContainerService.HintSize="534,57" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start Button" sap:VirtualizedContainerService.HintSize="530,57" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="8dddb9ad-2e7f-4b51-a655-33e1bd11bba2" CvElementArea="45, 635, 339, 48" CvTextArea="193, 652, 43, 14" CvTextArgument="Start" CvType="Button" DesignTimeRectangle="48, 637, 336, 45" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' type='' class='bubble-element Button clickable-element' check:innerText='Start' /&gt;" Guid="7fd2ea64-3062-4ee1-80e0-e0091682e42f" InformativeScreenshot="629409f292ee6f40b496b25cdd3e1fab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -223,13 +223,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_CompanyData]" DisplayName="For Each Row in Company data" sap:VirtualizedContainerService.HintSize="534,1252" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_CompanyData]" DisplayName="For Each Row in Company data" sap:VirtualizedContainerService.HintSize="530,966" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Capture data" sap:VirtualizedContainerService.HintSize="496,939" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Capture data" sap:VirtualizedContainerService.HintSize="496,996" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -278,7 +278,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <TryCatch.Try>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'EIN' field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="Simulate" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;employer_identification_number&quot;).ToString]" Timeout="1" Version="V4">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'EIN' field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,254" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="Simulate" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;employer_identification_number&quot;).ToString]" Timeout="1" Version="V4">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="e865034b-b0ab-42c4-adb3-de844c2789ca" CvElementArea="459, 262, 132, 34" CvType="InputBox" DesignTimeRectangle="461, 264, 129, 31" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='28' tag='INPUT' type='input' class='bubble-element Input a1726668608193x3343' aaname='' /&gt;" Guid="139eb144-800f-4653-b39a-0274971faad4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIUAAAAjCAYAAAC6n8nPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADVSURBVHhe7dsxboNAAETR3P+MNHAACgoaio0mki3wOCfY96QRBXT7Rbc/53kOs/tEYbVHFPu+j23bxrIsNsly3jn3ewfvKPIiHx3HMZjDdV1/572u6yOMdxQpJk/mkzBe5/+IIn8J5pQ/Rs5fFDyIgiIKiigooqCIgiIKiigooqCIgiIKiigooqCIgiIKiigooqCIgiIKiigooqCIgiIKiigoX6PIDSFXBuf07w2x3CV83SlkDrkZlrPPX+LrXdIsL1JMPrI5lvO+B5E9ojDLRGEfO8cvsTGxRFHd7UAAAAAASUVORK5CYII=" InformativeScreenshot="ffaf6766689bd0889d5f7defb16878f1.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
@@ -300,7 +300,7 @@
                           </uix:NTypeInto.VerifyOptions>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -318,7 +318,7 @@
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                             </ActivityAction.Argument>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'EIN' fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="204,25" sap2010:WorkflowViewState.IdRef="NTypeInto_15" InteractionMode="Simulate" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;employer_identification_number&quot;).ToString]" Timeout="1" Version="V4">
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'EIN' fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,254" sap2010:WorkflowViewState.IdRef="NTypeInto_15" InteractionMode="Simulate" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;employer_identification_number&quot;).ToString]" Timeout="1" Version="V4">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="059ac317-4f3f-4c85-bbdd-a09540b090b6" CvElementArea="609, 198, 134, 34" CvType="InputBox" DesignTimeRectangle="612, 200, 130, 31" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='20' tag='INPUT' type='input' class='bubble-element Input a1726668240944x3348' aaname='' /&gt;" Guid="c6c69528-332f-4499-b2e6-9970114c388b" InformativeScreenshot="877a20e6617b239cbb59a727ed04feb8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
@@ -340,7 +340,7 @@
                               </uix:NTypeInto.VerifyOptions>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
@@ -361,7 +361,7 @@
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="5086a0b9-4952-4b5c-8374-dad0ef766dac" CvElementArea="865, 326, 134, 34" CvType="InputBox" DesignTimeRectangle="867, 328, 130, 31" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='22' tag='INPUT' type='input' class='bubble-element Input a1726668828544x3343' aaname='' /&gt;" Guid="e02d417e-cc33-4c0a-92da-a6f0dbcc4e6e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAjCAYAAABRqHLMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADXSURBVHhe7dsxboNAAETR3P+MNHAACgoairUmEpZJxifY96QRBXT7Rbc/53kOs78ThtU9wtj3fWzbNpZlsYmWM8/Zf7bwDiMv8tFxHIN5XNf1e+bruj7ieIeRavJkTonjbuARRv4WzCt/jjQgDP4RBpUwqIRBJQwqYVAJg0oYVMKgEgaVMKiEQSUMKmFQCYNKGFTCoBIGlTCohEElDCphUAmDShhUNYzcQnI9cV5fb6Ll3uJ9f5F55AZazj9/i3p3NcuLVJOPbJ7lzD+jyB5hmN0ThpWd4wXrRjuJeGtU4AAAAABJRU5ErkJggg==" InformativeScreenshot="5a51161cbb67f00533a3c92ec2c17f8f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                   <uix:Target CVScreenId="5086a0b9-4952-4b5c-8374-dad0ef766dac" CvElementArea="865, 326, 134, 34" CvTextArea="827, 333, 38, 11" CvTextArgument="Sector" CvType="InputBox" DesignTimeRectangle="774, 300, 223, 59" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Sector' /&gt;" Guid="d0a52a31-7293-42e2-8dda-af1ca64a9d6c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOMAAAA/CAYAAAAScn8YAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANJSURBVHhe7d2xSxthGIDx/l+dnIRCQDgKDYJBaHC4KSCVQkOgZKrQTCKUEzqV6xC6ZJAM5aCQoUQoKZQIUlECwoESFLI4vP3e3EUTiGK65IXveeGHMd+Z5fLkOzMkz0ajkQBYPmIEjCBGwAhiBIwgRsAIYgSMIEbACGIEjCBGwAhiBIwgRsAIYgSMIEbACGIEjCBGwAhiBIwgRsAIYgSMIEbACGIEjCBGwAhiBIwgRsAIYgSMIEbACGIEjCBGwAhiBIwgRsAIYgSMIMYlu7q6kvPzczk5OYFH9JzruZ9+LhDjEunJ0BNzfX0tjD9ze3s7PudnZ2czQRLjEumro/5k/BwNcvIcUMS4RLorMv6O7pD6HJg8H4hxiYiRIUYjiJEhRiOIkfEvxrQjja1AgsBZK0hxO5JuOue4pzpuSdwZzl9bADEy3sWYvA+kcXT/e/q9KoVaMnPMQtzflw7689cWQIyMdzF2dkvy4ef0TtaT5ueODPV22pXobWm8axbWilL5eh9Z+qMhZd1Nnbvd9DSWyosVeb5acPc3pDN+DLfzvs533vWKREdp/hiJVNerUq/oWlVaF9njThAj412Mo6GL711ZyrVI2keDLMJcbz+c2jUHEoc70rp0ty9bsvOqIb2bbC09rEqw28mOm9kZh9J6U5TGr+y4UdqW6uae9MZrLsbVqrQfuCQmRsa/GCeGA+l+q0vZ7Vat0+y+pLYiwWYoYZgpuZ0t1rXjSEoPXcrOxNiXyD1ecreuQYcSD/S2i3Ejkv7d2ixiZDyLcSDJfjPfqXJpUyphLAN3O6mVJDqeWptYJMYNYmT+b7yLMQ5Lsvd76n/GPy60PMbeflHCL3+z+29SaR80s3jmXKYWP3az41yMxU9PvEwlRuaR8SxG5yK5f4NFbdWlnV+mjm76Em8XpbDm7n9ZlvphHqYz9w0cXUsTqQerUnjKGzjEyDwy/sVoFDEyxGgEMTLEaAQxMsRoBDEyxGgEMTLEaAQxMsRoBDEyxGgEMTLEaAQxMsRoBDEyxGgEMTLEaAQxMsRoBDEyxGiEfpo0H+3v7/CJ4obo9yxMvm+B8Wf0k8T1/OuuyHdtGKInQ18d9cTAH3rOp0NUxAgYQYyACSP5B446T0Y3Oew3AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
@@ -401,7 +401,7 @@
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="c94aa982-5844-4657-bba9-8dd3679eb04f" CvElementArea="930, 288, 112, 35" CvType="InputBox" DesignTimeRectangle="932, 290, 109, 31" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='21' tag='INPUT' type='input' class='bubble-element Input a1726669305068x3343' aaname='' /&gt;" Guid="a9d85f80-33c6-4e12-a13f-4216bbfa440e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHEAAAAjCAYAAACjOOUsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADQSURBVGhD7dsxCoQwGAXhvf8Z0+gBUlikscjyFhQDbp8MM/DYQrsPu38/rbXu1p6IgA2Itda+73svpbhJF584Pd1uxDzIS8dxdJuz8zx/Ptu2DZA3YoTza/MXyMtrQMxXaGuULzJeIi6eiIBEBCQiIBEBiQhIREAiAhIRkIiARAQkIiARAYkISERAIgISEZCIgEQEJCIgEQGJCEhEQCICekXMRbEn/Gv09wI8t/3Xjb/NWS6/Y5Wv8PW/GFkeRDgvuTkXnydgNiC6NSfi8mv9C3Md5GfyzPYMAAAAAElFTkSuQmCC" InformativeScreenshot="749d69537d1d9e64d9bb61fda2ba8c57.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target CVScreenId="c94aa982-5844-4657-bba9-8dd3679eb04f" CvElementArea="930, 288, 112, 35" CvTextArea="934, 274, 36, 11" CvTextArgument="Sector" CvType="InputBox" DesignTimeRectangle="932, 271, 123, 50" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Sector' /&gt;" Guid="c6323361-c682-4522-8598-7a58159aa872" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH8AAAA2CAYAAADu6ka3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALYSURBVHhe7Zu/axphGMf7f3XK5CQIRyBS6FGIdLhJCM3SQyjpkkCcQqBclgxFoS4hAXEIN91koCSLAUlJcDqIiAEXh2/fR09z2kvND5uYPt8vfPD1vddn+dw99zq8b3q9HohOKF8xlK8YylcM5SuG8hVD+Yq5Q36IYDsHa9mCZaWRXsnDOwkT1t2T6wClo0byNfJiJMv3N2Bt12+/hz7cjAv/JrbmIZx7sAt+8jXyYiTLDzZhb9XRic2d/thHcC3jEPW9ddjSFTJpZNdKaIxuijBAcVW6heHdqFuYuUwKb5dSZj6P0q/h2kY5j6ysM+S+1nAR1fALWbhf8oOu4x48oduQmdzR9jtGtovcRxdetY5WJ3btbAdOrCu0vjtYP+oMfnP4KYviz2hdWIO7vIlAxtNPvqmRXTtEGH1vfLOjGiI/BbdK6c/BjA1fB62TCjZWzdN4cDGcO3axZNlwHGfIhyzyZbnWgPfevBr+qGGYll91Ye/F9gCm01hbwWDsF2x459E8+ackym8d76ByFp8LUck7KLXM2MifEDfmAfKna1D+i5Asv+zA3j29feffiNhIvrRspzR+R4dVD5WBrIS2v1JEXcYi/3NtOC/8te1T/nOR3PZvQvjyVy/akFnLOWxUo7ZvGGzWzGZPNmXxzVryhk/qNbC/mkLqXhs+yn8uZrzzyf8M5SuG8hVD+YqhfMVQvmIm5LfbbVxdXaHZbJIFRfyIp7i3xzKWLwWleLfbBbOY6ff7Az+Xl5dzuQHG8uWOkk9m8SM3wMjXUxjLl6eeeR2RDiC+4iIfA+W/0lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4lC+4sxVvpwA4VGt15G5n9iRs1+jM2DMYkZO6ogreernelZPkIJyR0lxspiIn3mIFybkE11Qvlp6+A2dWU6Av+LqxwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -428,19 +428,19 @@
                         </Catch>
                       </TryCatch.Catches>
                     </TryCatch>
-                    <TryCatch DisplayName="Try to type into 'Automation tool' field" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                    <TryCatch DisplayName="Try to type into 'Automation tool' field" sap:VirtualizedContainerService.HintSize="434,518" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <TryCatch.Try>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'Automation tool' field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,254" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="Simulate" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;automation_tool&quot;).ToString]" Timeout="1" Version="V4">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'Automation tool' field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="263,25" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="Simulate" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;automation_tool&quot;).ToString]" Timeout="1" Version="V4">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="72e1688e-740a-4cc4-807b-7da0bdabba98" CvElementArea="688, 412, 134, 35" CvType="InputBox" DesignTimeRectangle="690, 414, 130, 31" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='4' tag='INPUT' type='input' class='bubble-element Input a1726669928266x3343' aaname='' /&gt;" Guid="db9a59d4-08ed-44fe-a381-696340b9c93f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAjCAYAAABRqHLMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADXSURBVHhe7dsxboNAAETR3P+MNHAACgoairUmEpZJxifY96QRBXT7Rbc/53kOs78ThtU9wtj3fWzbNpZlsYmWM8/Zf7bwDiMv8tFxHIN5XNf1e+bruj7ieIeRavJkTonjbuARRv4WzCt/jjQgDP4RBpUwqIRBJQwqYVAJg0oYVMKgEgaVMKiEQSUMKmFQCYNKGFTCoBIGlTCohEElDCphUAmDShhUNYzcQnI9cV5fb6Ll3uJ9f5F55AZazj9/i3p3NcuLVJOPbJ7lzD+jyB5hmN0ThpWd4wXrRjuJeGtU4AAAAABJRU5ErkJggg==" InformativeScreenshot="dcdc7e1ff824e1be454f2788dbeb84f6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                   <uix:Target CVScreenId="72e1688e-740a-4cc4-807b-7da0bdabba98" CvElementArea="688, 412, 134, 35" CvTextArea="689, 393, 86, 11" CvTextArgument="Automation Tool" CvType="InputBox" DesignTimeRectangle="680, 386, 153, 59" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Automation Tool' /&gt;" Guid="4b57f931-0a37-4c2d-ad1c-b323562632a8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ0AAAA/CAYAAAD68sozAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP5SURBVHhe7ZzBS9tQHMf3fxUGngKDgBAEi2AY2FNhUBBlsLJLD6MHyw4yGBXGDiOCXkYHo4chDHLaYHQgHchEKQgFpSj04uG796uvmtRsJnH8Bsv3Cx+Mfa/5pXmfvpccmgfj8RiEaELpiDqUjqhD6Yg6lI6oQ+mIOpSOqEPpiDqUjqhD6Yg6lI6ok1+60w5qpRLqnxLaEhkh3O6gn9j2lzkNEXzo3/x/0kVjpYHuSaRPHg4D1DwPnsGZK8GZv9r2NsLk/nfQ3/IznL//h9zSjd7XUHlWh/d8L7H9Nn20l+vYS2z7y/xow099XPnYe+6j/SO5LS2ULhMjdFblpPfQWjAiXUxfnxVrD/Xl9mR2CzdcOA/n4JiZobb9c9I+/NxCxc4c5dU2vgyv3ieD4T+pw18yM8ojD42PXxA89U0/B85SC6HtN943M8+iC1f2sbyOYF9eD9Gad1Cac0z/GoJDexylm+NKU9edL5vjjMyWM9ySbmjqrtiZb6mG9tfhdduf6lG6tMjSamXqvfSw/mFk234v3a02s4/1xRZ6VtjhRzPYr3qTbRmMyrvBVb/hrlnGa9i1AzV4V4H/5kra3k4DwTe7P+lXDTCQ7VszXUS6O+r6r61oFyGabiPyWeLEpTNfwrUyWtfH0kX98SZ6sn1HPUqXksF2FZ49ceOwCXetg9GkLYN0+22Uo2IMAlStNPHBiM9S409m0LasGIdyrebBX6ma95bhTGv9SbrUdWc/S5y4dKbvUrTvAEG1imBgtlPXKw45pJMT6t18q81y1nTX0TmV7QzSzYqRWTrZnxn4yZJq+6WRLnXdjNLF+kakS12vOGSXTk7aQxe+OanVCRWUH83ZJXZGyG8tc60Vl647vf5Lvez8Tjoj+0IT4XR/0Voy0M+69v1CZB+p62aRjstrFjJLF1tap3zfhLdql9jIxb3/on597Sf9+m8qkxuDNDcSd0tn+u3UUJ534S14qGw0b2pd9PF2xdx05LiRyCedgTcSqcl3I0HIPaB0RB1KR9ShdEQdSkfUoXREHUpH1KF0RB1KR9ShdEQdSkfUySXd2dkZjo+PcXBwQAqEjLmMfZITWcgsnRSVAzg/PwdTnFxeXk7G/Ojo6N7iZZZObJe/TDEj4k0dyEtm6WSWY4obmfHEgSQ30kLpmMyhdIx6KB2jHkrHqIfSMeqhdIx6KB2jHkrHqIfSMeqhdIx6KB2jHkrHqIfSMeqhdIx6KB2jHkrHqIfSMeqhdIx6KB2jHkrHqIfSMeqhdIx6KB2jHkrHqEddOvl1Nx8pUdz8k1/4y3Msps+zYIoT+WW/jL/McurPMhGkqNguB0CKg4z5fYUTcklHyH2gdESZMX4BqhulyuzpWLUAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
@@ -458,17 +458,17 @@
                           </uix:NTypeInto.VerifyOptions>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NTypeInto>
                       </TryCatch.Try>
                       <TryCatch.Catches>
-                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,324" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -476,11 +476,11 @@
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                             </ActivityAction.Argument>
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'Automation tool' fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,254" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="Simulate" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;sector&quot;).ToString]" Timeout="1" Version="V4">
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'Automation tool' fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,254" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="Simulate" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;automation_tool&quot;).ToString]" Timeout="1" Version="V4">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="aec1a781-8c51-4ec6-b91c-f99338457f3c" CvElementArea="733, 344, 134, 34" CvType="InputBox" DesignTimeRectangle="735, 346, 130, 31" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='63' tag='INPUT' type='input' class='bubble-element Input a1726675799417x3348' aaname='' /&gt;" Guid="7e45d4b0-b23d-4233-b838-ddda76ec8337" InformativeScreenshot="7d764b75be88e13fa7f42c817e31c799.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target CVScreenId="aec1a781-8c51-4ec6-b91c-f99338457f3c" CvElementArea="733, 344, 134, 34" CvTextArea="869, 351, 87, 11" CvTextArgument="Automation Tool" CvType="InputBox" DesignTimeRectangle="735, 346, 242, 31" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Automation Tool' /&gt;" Guid="35187ccd-ebb6-4d1d-b58d-153716ec5900" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPYAAAAjCAYAAACn4fdUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP4SURBVHhe7Z3BS9tQHMf3fwmDngKDgvAQVgYLwoqHnAJCL5ZeHIx6KD2IMDoQT/E6KoiHERjkMDYYHYwK4lA8FRRR6MXDd+/XpM+k69rUDbe+fr/wwde8JC/63ifvNR7ypN/vgxBiFxSbEAvJiH11dYXz83OcnJyQBUL6XPo+PRbIfGPElo6VTr65uQGzOLm7uxv0+dnZGeW2CCO23LXlJ7OYEbmHY4DMP0Zsma2ZxY3M3DIG0oODzC8UmzGh2PZAsRkTim0PFJsxodj2QLEZk1xif21ALbloHY+pG8dlhOCgO77ub3PcRhBdm8/d3TLKu3/e9um+D6WUxkHhqYPioKzQ+Dh+/2mEtRn+fg+EYjMmecTuNF1UN3y473IKc9yCWwvH1/1tPlTzX9eDCFF92UJ3bF1+KDbzqJkudgeNlSrCXht+eoCPymsEi9BYdrBUcPQM5yP4Edd39QxYSma98usjnN7G28OagrfuobRShPPMw96nEI01vZ8+h/IDdJP9eh8bcJeL8Sy61kDU09t/BPCfFbDkyHa9Tdp552ZEn96uQnHZ1TNxzxyT5Vex5VrKyTlL6y18lmuRutsugvVSfI2qjM3DU3MMxWYeNVPFlmX4QOBrtNcVtr8l238r9pi6b9tagDZ6yefuWxeVg3j5HNYc1IfL2y+6LS3o50S+6E0Rm6GULxA2t/XN5X4/dyuKyyMzdkbsKe1WDxOZzwKUV/dwmuyXZUTsyzYqzxvoDG84h7r9nc6g3NkpwX+fnFNL3lqtoH0Z70exmUfNNLGjraKR4WLfg0oG8Uxiy+BPydeP6lCJmJkBL8elJBJJqx/icu9LC/6LElzPg7eqUBief5LYeduduNweqfveQin9u10E8LwAF7p8tJGVN9pSqEdxmWIzj5rJYkeoO76ZdQaDeGUbHSnPIvaIfDOLfavlKlZxNJyx0+efJHbedmcRe/R3S4k9Ki/FZv5ZJoqtRXAc/d1UZskBLlQhWY4PJL9fknaaKiv2xtH9eSYuiXOILW2txfLI9t57H0spsUtv7+XNiJ233VnE5lKcmYdMEju9DB9yfVCBasYDefBgSh5orbio11JPzfWg3nvlwMn18CyH2Pr7fdR0UVzWx+u2Klta5qHYvRCbSv4dNevDsweKreHDM+a/z8QZm8wVFJsxodj2QLEZE4ptDxSbMaHY9kCxGROKbQ8UmzGh2PZAsRkTim0PFJsxodj2QLEZE4ptDxSbMaHY9kCxGROKbQ8UmzGh2PZAsRkTim0PRmx5CwRf77O44ZtA7MKILe9tGr6/iVmcyBtApP9ltua7u+zBiC1Ix8pdWzqZLA7S55TaLjJiE0LsgGITYh19/ASiRzwplG84pwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -507,10 +507,10 @@
                         </Catch>
                       </TryCatch.Catches>
                     </TryCatch>
-                    <TryCatch DisplayName="Try to type into 'Date' field" sap:VirtualizedContainerService.HintSize="434,518" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                    <TryCatch DisplayName="Try to type into 'Date' field" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -519,7 +519,7 @@
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="40d94437-277d-4c7f-a4d1-ec244c7d19d1" CvElementArea="1058, 418, 248, 33" CvType="InputBox" DesignTimeRectangle="1060, 420, 245, 30" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='66' tag='INPUT' type='input' class='bubble-element Input a1726677743329x3343' aaname='' /&gt;" Guid="f79bcc28-dc4c-48a3-998e-0ee6132afb44" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPkAAAAiCAYAAACdtn98AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADrSURBVHhe7d0xDoJAAERR739GGjgABQUNxZox0UiiB9jJe8nEAtrPdu7jPM9hZr0TuVn5bpHv+z62bRvLspjZhEu/6fi760/keZCXjuMYwHyu63r1u67rLfRP5PkC5BeYW0J/93yLPKc4ML+c6OlZ5FBM5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FBO5FDuZ+T5M3a3p8D8/l6ukGtV3terAPPJpQppOaf4z2uSsjzIFyAvmdl8S7/fgWe3yM2sbyI3q945nqOzdlMY0sDiAAAAAElFTkSuQmCC" InformativeScreenshot="95cff44c8b9dc1ace407f2780230f6cb.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                   <uix:Target CVScreenId="40d94437-277d-4c7f-a4d1-ec244c7d19d1" CvElementArea="1058, 418, 248, 33" CvTextArea="1028, 429, 25, 11" CvTextArgument="Date" CvType="InputBox" DesignTimeRectangle="1028, 420, 277, 30" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Date' /&gt;" Guid="65bdbe3a-cba9-48bb-bfaa-0036625e7968" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARkAAAAiCAYAAABr2q3NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ0SURBVHhe7d2xi9pgHMbx/l+FQidBCAhBOBezVDo4CQfS4bjFLhbOsXB4UDrp4OZw3FAEIVO7XBcFEZROwokouDj86k/NqddEgvSlSfr9wIMmby5keR9ec8P7arlcCiGEmAolQwgxmkiVzHQ6lfF4LIPBgBASw+j81Xl8OK8jUzL6YPqQ8/lcAMTParXazN/RaHRUNJEpGW1A/QQQb1o03nzWRKZkdBUDIP50RaPz2ZvblAyAv46SAWAUJQPAKEoGgFGUDACjKBkARlEyAIwKLplvV/I6ZYlt27sUpHI/3I/7ZiZusy0937HwoWSA5DhZMs5db3+8eJTaRVnaTwfX/JGe1PNX0vEdCx9KBkiO8CWzTufakXp//X3Rk8ZlTqzMeoWTdaTc3F7n3liSevNWUuuVT6m5XfUM7ytSyOpKyBIrXxN3sr9fUCgZIDnOK5mfLak0H3fnJ9IqFaXxS7+/WMk8taV82ZKJd9ytivPZ+7vgUDJAcpy5khnKw8eC2PmCFItFyaV351+WTL8uTjq3uWaTd47YN+7RPf1CyQDJcVbJ9O4ccW73Y8/l41cy153n68KGkgGSI3zJHLz4dT/ZUu0enM8el8zDYjemP5cyVXFn2+PZj4Z8dWfbsROhZIDkOFkygf/C7rekdGGJpeff16Ra8kpmvcr5UpBUev/id9KtiZPZ3sf5UJfvvPgF/ivBJfMPQ8kAyUHJADCKkgFgFCUDwChKBoBRlAwAoygZAEZRMgCMimTJ6GZQ7B4JxF9kN3fTbS297S0BxI9u6qZzWVcxkdymVqMPpg2oD0kIiV90/h4WjCZSJUMISV4oGUKIwSzlN9o0epUqX8OgAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
@@ -559,7 +559,7 @@
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="5d82e8b1-5026-44db-a5e6-ce740409885e" CvElementArea="688, 482, 134, 35" CvType="InputBox" DesignTimeRectangle="690, 484, 130, 31" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='5' tag='INPUT' type='input' class='bubble-element Input a1726678027930x3343' aaname='' /&gt;" Guid="107c859a-4f31-4709-8a08-5f21401623e6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAjCAYAAABRqHLMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADXSURBVHhe7dsxboNAAETR3P+MNHAACgoairUmEpZJxifY96QRBXT7Rbc/53kOs78ThtU9wtj3fWzbNpZlsYmWM8/Zf7bwDiMv8tFxHIN5XNf1e+bruj7ieIeRavJkTonjbuARRv4WzCt/jjQgDP4RBpUwqIRBJQwqYVAJg0oYVMKgEgaVMKiEQSUMKmFQCYNKGFTCoBIGlTCohEElDCphUAmDShhUNYzcQnI9cV5fb6Ll3uJ9f5F55AZazj9/i3p3NcuLVJOPbJ7lzD+jyB5hmN0ThpWd4wXrRjuJeGtU4AAAAABJRU5ErkJggg==" InformativeScreenshot="4e878f119b94304acca87026ea53dc85.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target CVScreenId="5d82e8b1-5026-44db-a5e6-ce740409885e" CvElementArea="688, 482, 134, 35" CvTextArea="689, 463, 25, 11" CvTextArgument="Date" CvType="InputBox" DesignTimeRectangle="680, 456, 153, 59" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Date' /&gt;" Guid="d428554f-aa65-4d97-97ef-86cfed4ea8ad" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ0AAAA/CAYAAAD68sozAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKVSURBVHhe7ZyxaxphGIf7f3XK5CQEJFAXj4KdbhIKLpUu6eKQTKWLWTKUCyRLIVAcipOTQ0ghXEASlExCpRhwcXh7r6ixwZZ6yq/gPQ88hNz3GYV7+M4vcPdiPB4bolKiQ7lEh3KJDuUSHcolOpRLdCiX6FAu0aFcokO5RIdyU0QXW6O0Z7lCwQozi28b1hmsmrvkj7ZFl/HqMcyUKaOrWWvp2OBLxYqfrpfmrPC2YcH71uoxzJRbie63oG4iq7zKW95XwVLVohuf07bj/Zy93MslK2PFons/NrDOSdWCg2Tefj5ZLSOLH2d/D3farUd3fX5o0dXs+ODCKmFkD8/mTP3+0cKjzuL3h8+hVS9/Po3jzrr9le6+aYflggXl0MKwaLlSw+Lnc9xvNdsrBMkcn5f4umiVs7uncdxZtxydjwXWmF5S3ZbV/hJdcMLGIotueSPRtvpB3drz72ZXx8n3uqXo3jUXr/HLazG59N7N5g6+NuzidjaGO23K6P78L5P4PAkw2RgUkg3Cm6O6VebRPcZ2Ws4lr5tvJJK5Z0tzPzQXAeJumyI6xM0kOpRLdCiX6FAu0aFcokO5RIdyiQ7lEh3KJTqUS3QoN1V0w+HQ+v2+dbtdzJB+zv3cr2piHdeOzt/UP8BoNDLIDpPJZHrOe73exuGtHZ3X7j8hm3h48wbSunZ0vspBdvEVzxtY1ca/SnSwNkQHcogO5BAdyCE6kEN0IIfoQA7RgRyiAzlEB3KIDuQQHcghOpBDdCCH6EAO0YEcogM5RAdyiA7kEB3IITqQQ3Qgh+hADtGBHHl0fnc3j5TILv/lDn9/jsX8eRaQHfzOfj//vsrJn2Xi+pt67f4BMDv6Od80ODdVdIibSHQodmy/ACjflUO6XrHVAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -578,6 +578,85 @@
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                    <TryCatch DisplayName="Try to type into 'Annual Saving' field" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <TryCatch.Try>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'Annual Saving' field" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="204,25" sap2010:WorkflowViewState.IdRef="NTypeInto_21" InteractionMode="Simulate" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;annual_automation_saving&quot;).ToString]" Timeout="1" Version="V4">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="7f48f0a3-39cd-4aaa-b264-3f16d656447e" CvElementArea="1165, 415, 133, 33" CvType="InputBox" DesignTimeRectangle="1167, 417, 130, 30" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='25' tag='INPUT' type='input' class='bubble-element Input a1726685412260x3348' aaname='' /&gt;" Guid="e95b6470-4a11-4e62-9661-79806490249d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIYAAAAiCAYAAACa9KFpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADVSURBVHhe7dsxboNAAETR3P+MNHAACgoairUmEpZJxifY96QRBXT7Rbc/53kOs78ThtU9wtj3fWzbNpZlsYmWM8/Zf7bwDiMv8tFxHIN5XNf1e+bruj7ieIeRavJkTonjbuARRv4WzCt/jjQgDP4RBpUwqIRBJQwqYVAJg0oYVMKgEgaVMKiEQSUMKmFQCYNKGFTCoBIGlTCohEElDCphUAmDqoaRyyZuoc3r64WjXE+7r6kxj1w0yvnnb1GvKGZ5kWrykc2znPlnFNkjDLN7wrCyc7wAOpMmwZv/43YAAAAASUVORK5CYII=" InformativeScreenshot="6c3b00b0a2fb425743fce90c0bf371e0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="7f48f0a3-39cd-4aaa-b264-3f16d656447e" CvElementArea="1165, 415, 133, 33" CvTextArea="1083, 422, 73, 13" CvTextArgument="Annual Saving" CvType="InputBox" DesignTimeRectangle="1083, 381, 214, 66" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Annual Saving' /&gt;" Guid="95ba3841-077c-486c-86c9-8990344d2317" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANoAAABGCAYAAACquYrjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASdSURBVHhe7ZzBa+JYHMf3/9rTnoQFoRCEyoJhoTKHwECg4GWlFxcGC5UeysLgwDAnC+1l6ECZQxEKOXWgODBYKF1aPAlbpEIvPfz2/TSpGSdau9QfC36+8KHxvRhfzfv4e8khP93f3wsALBdEAzAA0QAMQDQAAxANwABEAzAA0QAMQDQAAxANwABEAzAA0QAMQDQAAxANwABEAzAA0QAMQDQAAxANwABEAzAA0QAMQDQAAxANwABEAzAA0QAMQDQAAxANwABEAzAA0QAMQDQAAxANwABEAzAA0QAMQDQAAxANwABEAzAA0QAMQDQAAxANwABEAzAA0ZbI7e2t3NzcyOXlJawQes713KfnAqItCf2i9Uu/u7sTsjp5eHgYnfPr6+vvZEO0JaG/avqXrGZUtmQOKIi2JLSakdWNVjadA8l8QLQlgWgE0QxANIJoBiAaeVq084Z4P/vSvMjoWzYXTfG32lPtfYl2yuIVPPG8vOTXQ2l+6U/tsxjd92Upv+9m9r0kiEaeFK2z60v1j1D8d8ufkD+QJVq7Jt7O2eR1vy3Vtaq0h6l9/mcgGnlCtI40Cm4S948kLDWlm+prb3kSbAZSdJUlv+ZL43RcVbrvfPFfV8X/TduLEu7Hgk5Lc+L2SeT91pJw3VUnz1WpUkVa3+J9skSL6uJvn8kg1dY5+CDRP2572JXWZtF9rjtOwZdK/NnRG0/qUbK//k8VOXL7j8Yaj2HmuLVvP5TiWt5VUNf+evKeRUE0Ml80XTaOJvpAjjY92fs66Wtv5aR6HC/ZrltS/v2DXLnt0YR9G0/EYST1fE3auj1HtM5BTVrncXv/UMKgJb2s94wYuP2rUn5VlebxmfQGqb6vh1Lb78Sv+3IYBtLque3Tunjb0bj98X/KEC1r3L2WBIWGdOKK2X2LaOT5mStatJ2XyqfBaLu3H4j3VzKJVbT0dZtbvsUVTyds9SRp70qz5Cqibs+raH9/ltqGJ/5GIEFQlFxSPTNFSxhI74sTa6Mo1Y9X47bhlXz+012/lcruOK7a/hqPUcUp1CVy+3R2vcfxTYuWOW5XQR8lVdLjXhBEI3NEc5MzF46WWKPXo1/2PenE/S8nmu7jjpUsF1PHyhKtd7Inh6nKmq5c31UlR3qM0Ru3vD3vyN765HoO0YhVZovmJlgu50nZVQatDkHgi/fLZPn4bNGmlmBaWcYTNq42yc0MXdrNE81VVt9V1sdrNHdd1iyNRYu23bXYadKu12KpMbrlo69VLnW8hURj6UheIDNFSy8bEwafKuLtjpePzxZN+5KbCk6A+tbkTmb3IGl3Yu/UJzdespaOw7609fa+3jhRCmWpHcdLxwt3fZfcVHnVkHqYHqNW6NxERMdComlfatwVboaQ/5DZFQ0y0YoWHPQy+2aBaATRFuJKWuG4gpZ32tJPlrkLgmgE0QxANIJoBiAaQTQDEI0gmgGIRhDNAEQjiGYAohFEMwDRCKIZgGgE0QxANIJoBiAaQTQD9OGZPKV4dcMDVI3Qx0Enj4UmqxN9cKqef61mPBLcCP2i9VdNv3RYHfScpyVTEA3AAEQDWDr38i+hqBveWCODGAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NTypeInto>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,105" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="False" DisplayName="Type Into 'Annual Saving' fallback" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="204,25" sap2010:WorkflowViewState.IdRef="NTypeInto_22" InteractionMode="Simulate" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;annual_automation_saving&quot;).ToString]" Timeout="1" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="3b090320-e938-43d1-9107-3f41b51853e6" CvElementArea="1139, 288, 85, 34" CvType="InputBox" DesignTimeRectangle="1141, 289, 81, 31" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='24' tag='INPUT' type='input' class='bubble-element Input a1726686006744x3343' aaname='' /&gt;" Guid="d9f14110-a67a-4479-aaf0-541b4e6fabfa" InformativeScreenshot="7bc71bd96894d14b18475564b5455fd6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="14b3fb4d-98e8-4504-ad40-a62bc37abaaf" CvElementArea="1139, 288, 85, 34" CvTextArea="1221, 294, 74, 13" CvTextArgument="Annual Saving" CvType="InputBox" DesignTimeRectangle="1134, 289, 171, 50" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Annual Saving' /&gt;" Guid="c36b69e3-c4b3-4bcf-88ab-0fa6beb4c1c5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK8AAAA2CAYAAACx+8n+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARqSURBVHhe7ZxBa9tIGIb7v3LqySdDQRhqAhGFmhwMC4KALzGB4kJxoMIHU1hc6Kk40LCwuBcvFENAh9JAcCG4ELYkGBYEG0wCvuTw7nzKyJZVJatNoyGzvC88RBopymj06NMoBz2az+cgxEYoL7GW3PKen5/j7OwMJycnJCcyXjJuWeNJfp5c8soFkItxcXEBJl+urq6i8To9PaXABZFLXqkg8pP57xGB4/Ej90sueaXqMneLVGAZv6xxJT8H5TUQylsMlNdAKG8xUF4DobzFQHkN5Ad5j3w4ay563xJthpi8ddH8lGoPA/ibDhxH8aSM6lYPX8LUPrkIMXxZQ+uPMGPb/UN5DSQt77ijBNr24L6drLSbIEve0QsH/uFyPfzURHlntLLPQ4TyGsiqvGP4lSZG4QDeRg+TRfsITacOr15VFbCM8oaPQFc/Ec79pQl33UH5SRXenpZeSZa8AZJihgc+XFVFo2q6uXqstLzBrov251mibYz9dwFmsnzch/dU9UeOs9FA/1j/zisH7WC5v19pYPC3uhF21hbHv7HfqkIHr13VJtW+ps7Z+fFpkAPKayAr8sqUIapqMwy2HHS/xuOs5C01MdSSTd/X4L77M1qOJPhVX/jLAO1yCyNZvlHeKUadrrpBrtvnh0rk3SC1T4KZknW7htpOD8PD6bW0mvGHFvpHej3cV6L1MZXlgzYcfczlOWXIm9XvoI3y1gChLMtUY7tEeR9qkvIGu2U0Pl5XueleHc6bsd6m5E1W4oSYq8JN0NtQlTu1T3q/8LAHb70Kt15H/ZmDx1quTHljZlN8+a2F2noTg++67fsQrecO3OfqOOqpUIr7KDJW2gjU8rizrJxpebP6Ledd35vq9n/p0y1QXgNZyqsueMmLHq/R+rSPeqWLcbTtHuW9VMcqL6v4/FsP7o3yqir9Zl/3QbOosPK31Iulniqk+xi8cuEfjdF9qvpzed1Gef9nWcirHpelkoOaVMMIF87jeOpwB3lTj9/BlhZHbopN/XhXhL97WLtF3r7qR/drYs57rGSP5NXVVYsZTQ+SfVRTB6nsVX1sIY+8nDZYlFje5JQhZvaxAacjU4c7yJt88al4aG1X9X4zBJ243UVjt7kQLLPK/TWCr6YG0ctd9ILXwlBPGyYfPFTlxa+ibrrX7dRLpjxJSmgfxOs55V3pN1/YHnQWlZdkIJW3Cv9z1rbbobwGQnmzCOBHlb4K7/145T8ceaG8BkJ5i4HyGgjlLQbKayCUtxgor4FQ3mKgvAZCeYuB8hoI5S0GymsglLcYKK+BUN5ioLwGQnmLgfIaCOUtBsprIJS3GHLJK1984aee7hZ+Mac4cskr39qKv7nF5It8KUfGTqouv1VWDLnkFeQCSAWRi0HyIeNFcYsjt7yEPDQoL7EWykushfISa6G8xFooL7EWykushfISa6G8xFooL7EWykushfISa6G8xFooL7EWykushfISa6G8xFooL7EWykushfISa6G8xFLm+Aec6qMcPjnP9AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
