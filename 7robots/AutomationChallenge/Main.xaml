@@ -160,28 +160,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ueab:ExcelProcessScopeX>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: The Automation Challenge app" sap:VirtualizedContainerService.HintSize="546,1207" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="06059737-446a-4d8f-aa69-32dbee847925" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: The Automation Challenge app" sap:VirtualizedContainerService.HintSize="546,1432" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="06059737-446a-4d8f-aa69-32dbee847925" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Interact with app" sap:VirtualizedContainerService.HintSize="512,990" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Interact with app" sap:VirtualizedContainerService.HintSize="512,1215" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NNavigateBrowser Action="Refresh" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Version="V4">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </uix:NNavigateBrowser>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayBetweenShortcuts="{x:Null}" DisplayName="Zoom in app" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InUiElement="{x:Null}" InteractionMode="SameAsCard" OutUiElement="{x:Null}" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Shortcuts="[d(hk)][d(ctrl)][k(add)][u(ctrl)][u(hk)]" Timeout="{x:Null}" Version="V4">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayBetweenShortcuts="{x:Null}" DisplayName="Zoom in app" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InUiElement="{x:Null}" InteractionMode="SameAsCard" OutUiElement="{x:Null}" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Shortcuts="[d(hk)][d(ctrl)][k(ins)][u(ctrl)][u(hk)]" Timeout="{x:Null}" Version="V4">
               <uix:NKeyboardShortcuts.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionOptions.Retry>
@@ -199,6 +191,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
+            <uix:NNavigateBrowser Action="Refresh" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Version="V4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NNavigateBrowser>
             <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Start Button" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Timeout="{x:Null}" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="8dddb9ad-2e7f-4b51-a655-33e1bd11bba2" CvElementArea="45, 635, 339, 48" CvTextArea="193, 652, 43, 14" CvTextArgument="Start" CvType="Button" DesignTimeRectangle="48, 637, 336, 45" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' type='' class='bubble-element Button clickable-element' check:innerText='Start' /&gt;" Guid="7fd2ea64-3062-4ee1-80e0-e0091682e42f" InformativeScreenshot="629409f292ee6f40b496b25cdd3e1fab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
@@ -220,25 +220,25 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_CompanyData]" DisplayName="For Each Row in Company data" sap:VirtualizedContainerService.HintSize="450,729" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="{x:Null}" Values="{x:Null}">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_CompanyData]" DisplayName="For Each Row in Company data" sap:VirtualizedContainerService.HintSize="450,954" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="{x:Null}" Values="{x:Null}">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Capture data" sap:VirtualizedContainerService.HintSize="416,540" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Capture data" sap:VirtualizedContainerService.HintSize="416,765" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Company information: &quot; &amp; vbCrLf &amp;&#xD;&#xA;&quot;Company name: &quot; &amp; CurrentRow(&quot;company_name&quot;).ToString &amp; vbCrLf &amp;&#xD;&#xA;&quot;Company sector: &quot; &amp; CurrentRow(&quot;sector&quot;).ToString]" />
-                    <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="None" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,277" sap2010:WorkflowViewState.IdRef="NTypeInto_1" OutUiElement="{x:Null}" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;company_name&quot;).ToString]" Timeout="{x:Null}" Version="V4">
+                    <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="None" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" OutUiElement="{x:Null}" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Text="[CurrentRow(&quot;company_name&quot;).ToString]" Timeout="{x:Null}" Version="V4">
                       <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="b9385bea-3bdb-4b18-a354-24cc4686f78f" CvElementArea="1120, 251, 177, 45" CvType="InputBox" DesignTimeRectangle="743, 596, 173, 41" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='24' tag='INPUT' type='input' class='bubble-element Input a1726617654249x3343' aaname='' /&gt;" Guid="cf259484-0c9a-411e-8657-11fe15f8cf5c" InformativeScreenshot="2208522733352d310c092a6b919fbdbe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="67efe33f-e42a-4d91-9710-9c2c8eae6f07" CvElementArea="864, 346, 133, 34" CvType="InputBox" DesignTimeRectangle="867, 348, 130, 31" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tabindex='24' tag='INPUT' type='input' class='bubble-element Input a1726626842231x3343' aaname='' /&gt;" Guid="6d1e4fbc-008a-4a33-8757-efb45b1cac3d" InformativeScreenshot="574cb632cb4f5d2f31a24f75181a7e1b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
                             <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                              <uix:Target CVScreenId="b9385bea-3bdb-4b18-a354-24cc4686f78f" CvElementArea="1120, 251, 177, 45" CvTextArea="997, 260, 109, 17" CvTextArgument="Company Name" CvType="InputBox" DesignTimeRectangle="619, 596, 297, 41" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Company Name' /&gt;" Guid="e42c69b7-b655-4912-917b-a12f2f5d118f" SearchSteps="FuzzySelector, CV" />
+                              <uix:Target CVScreenId="67efe33f-e42a-4d91-9710-9c2c8eae6f07" CvElementArea="864, 346, 133, 34" CvTextArea="780, 353, 83, 13" CvTextArgument="Company Name" CvType="InputBox" DesignTimeRectangle="774, 320, 223, 59" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='bubble-element Group' tag='DIV' aaname='' check:text='Company Name' /&gt;" Guid="0393292c-5f15-4d38-8dc1-274ee59b74a6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOMAAAA/CAYAAAAScn8YAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATbSURBVHhe7Z3PSyNJGIb3/xpY2FNAaBAaYYJgEzB4aFgIyMjCBi8ZkAgGDzIwZGDwsMRDLoMH8bA0CH1Y4iXCEkFmUHJqWAkGcvHwTn1JVbrbdVw3O7P5dvN+8GCnun41VU9XdQvJd6PRCISQ+UMZCVECZSRECZSRECVQRkKUQBkJUQJlJEQJlJEQJVBGQpRAGQlRAmUkRAmUkRAlUEZClEAZCVECZSRECZSRECVQRkKUQBkJUQJlJEQJlJEQJVBGQpRAGQlRAmUkRAmUkRAlUEZClEAZCVECZSRECZSRECVQRkKUQBkJUQJlnDO3t7e4ubnB1dUVWSBkzGXss3OBMs4RGQwZmLu7OzAWJ+7v78djfn19nROSMs4RuTvKX8Zihgjp5oBAGeeIrIqMxQ1ZIWUOuPlAGecIZWRQRiVQRgZlVAJlZMwm47CH1mYRvu+PKW420UkeyaeeHpprHurxw7Qqoly+bw9lZMwkY2eviOpJMv2cnFTh78S5PP8NRLwCCqUGusNsGmVk/Psxg4yTyXo6nbxCF+03EfpynFs1y6idfLR5IlT9EJXQnFs2AoSH6EQNlFd8eEs+Kke9NN9qFfWfgkkd6w3EbtW1dXvLJn0lwJYrc9lEsBaiWpK6PbNSt9CT/l0coLgd2XpH6B+Z9j8Mpp/dtbTNzSTY7+bSnIzJWQOBqXPcl420L9G2j3AzRHHFQ2EpxOFvERobJo+5Nr9i25c6Pp2iJummvLccoHGW3sSyUEbGzDJ+aeXovimaCW8nnJGnWdrC8R9yzkhWqCO2k7SzZyboXsfmi1H3arZOk+9FgObvk3yjs3q66l60UTty0iRoV0K0+uZ4LGNzKkC846EWyXEXBy9NX8fpfbRC1xeHu5YEx5uuzez19RHtHyByN4NzI+bupC/RdgH1szTd9xvo/Kn9AY5fVdCe3kzMdZYO0JXjB1BGxleX8fRnM6kv08/xrm+fyYxkIoxN770LELxzq2G2TiutzZcrN/yI09dl+GtlhKFZlZZsWyJjZgWUuqu/To77v5gVU46vWwhfHWNg80zItJscY2tdhM5fX3LeRGW1iMC0F5Z8/GDbibYz1+luBrZM2r7UVUBRyo4pI1gxq6vNl4UyMmaW8Uvb1NwkNfxjGYen03LjMm9dmUxbT8joJOw5KW2eCXnxZBtbfh+laUPTF89cq1vZMu08X8a0/qegjIwZZHz6Bc6T29TnypjZpkrdnhVgLLbbGg67aJjnxr+UUbanP5q2wnSLnPJQlh4O1z14BZvWNyJvtCbPwobkQwUv/paMsk31TJ/tc+qgg9b7+MHqPIEyMmaSMfeSZsVHkP3XRvbcwxc4z5VxtYpaRcoXUFjNvMC5bKPy0shiX6bUK8+RcYSBkahgn/XyPLJyXR4i+N6lDRDvB+kLo93q9IXQ82Q0JDEaa7bPa1tonvMFDuPxmE3Gb0pe2q9BvBPg4OLxc1qgjIz/uYxmVZJ/dbyOkDx6Xg+UkaFQxsWEMjIooxIoI4MyKoEyMiijEigjgzIqgTIyKKMSKCODMiqBMjIooxIoI4MyKoEyMiijEigjgzIqgTIyKKMS5Nuk+dX+ixv8RnFFyO8suN9bYCxOyDeJy/jLqsjf2lCEDIbcHWVgyOIgY54VUaCMhCiBMhKighE+A5uvfcJrdxrJAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
                         </uix:TargetAnchorable>
@@ -254,6 +254,21 @@
                         </uix:VerifyExecutionTypeIntoOptions>
                       </uix:NTypeInto.VerifyOptions>
                     </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="16457143-bbdf-45ff-bcac-304c8c8fd22c" CvElementArea="832, 520, 176, 56" CvTextArea="890, 540, 58, 14" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1126, 449, 163, 50" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Submit' tag='BUTTON' type='' class='bubble-element Button clickable-element' check:innerText='Submit' /&gt;" Guid="6fad3272-51e0-4d7a-a5b1-ffe1d1e9353e" InformativeScreenshot="ae00d8c6b192c843af34f0ac67e62a7c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>
