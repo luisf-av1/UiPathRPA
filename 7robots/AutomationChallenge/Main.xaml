@@ -41,6 +41,7 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -157,28 +158,28 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ueab:ExcelProcessScopeX>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: The Automation Challenge app" sap:VirtualizedContainerService.HintSize="450,949" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="06059737-446a-4d8f-aa69-32dbee847925" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: The Automation Challenge app" sap:VirtualizedContainerService.HintSize="546,921" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="06059737-446a-4d8f-aa69-32dbee847925" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Prepare app" sap:VirtualizedContainerService.HintSize="416,665" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Interact with app" sap:VirtualizedContainerService.HintSize="512,704" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NNavigateBrowser Action="Refresh" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="354,114" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Version="V4">
+            <uix:NNavigateBrowser Action="Refresh" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" Timeout="{x:Null}" Version="V4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NNavigateBrowser>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayBetweenShortcuts="{x:Null}" DisplayName="Zoom in app" sap:VirtualizedContainerService.HintSize="354,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InUiElement="{x:Null}" InteractionMode="SameAsCard" OutUiElement="{x:Null}" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Shortcuts="[d(hk)][d(ctrl)][k(add)][u(ctrl)][u(hk)]" Timeout="{x:Null}" Version="V4">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayBetweenShortcuts="{x:Null}" DisplayName="Zoom in app" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InUiElement="{x:Null}" InteractionMode="SameAsCard" OutUiElement="{x:Null}" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Shortcuts="[d(hk)][d(ctrl)][k(add)][u(ctrl)][u(hk)]" Timeout="{x:Null}" Version="V4">
               <uix:NKeyboardShortcuts.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionOptions.Retry>
@@ -189,8 +190,14 @@
                   </uix:VerifyExecutionOptions.Timeout>
                 </uix:VerifyExecutionOptions>
               </uix:NKeyboardShortcuts.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Start Button" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Timeout="{x:Null}" Version="V4">
+            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Start Button" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="06059737-446a-4d8f-aa69-32dbee847925" Timeout="{x:Null}" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.theautomationchallenge.com/" CVScreenId="8dddb9ad-2e7f-4b51-a655-33e1bd11bba2" CvElementArea="45, 635, 339, 48" CvTextArea="193, 652, 43, 14" CvTextArgument="Start" CvType="Button" DesignTimeRectangle="48, 637, 336, 45" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' type='' class='bubble-element Button clickable-element' check:innerText='Start' /&gt;" Guid="7fd2ea64-3062-4ee1-80e0-e0091682e42f" InformativeScreenshot="629409f292ee6f40b496b25cdd3e1fab.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Automation Challenge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -204,7 +211,30 @@
                   </uix:VerifyExecutionOptions.Timeout>
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_CompanyData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,443" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="{x:Null}" Values="{x:Null}">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,254" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Company information: &quot; &amp; vbCrLf &amp;&#xD;&#xA;&quot;Company name: &quot; &amp; CurrentRow(&quot;company_name&quot;).ToString &amp; vbCrLf &amp;&#xD;&#xA;&quot;Company sector: &quot; &amp; CurrentRow(&quot;sector&quot;).ToString]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
