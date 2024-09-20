@@ -113,13 +113,13 @@
         <OutArgument x:TypeArguments="x:String">[City]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Zillow: Real Estate, Apartments, Mortgages &amp; Home Values" sap:VirtualizedContainerService.HintSize="450,811" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="5b604df3-1327-42ba-aa8d-75f462bbcec0" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Zillow: Real Estate, Apartments, Mortgages &amp; Home Values" sap:VirtualizedContainerService.HintSize="450,1675" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="5b604df3-1327-42ba-aa8d-75f462bbcec0" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,594" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1458" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -140,9 +140,65 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'For sale' Button" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5b604df3-1327-42ba-aa8d-75f462bbcec0" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'For sale' Button" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5b604df3-1327-42ba-aa8d-75f462bbcec0" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.zillow.com/" CVScreenId="499ab986-7aee-4738-b65f-a7b2a79c8f94" CvElementArea="598, 446, 185, 45" CvTextArea="663, 461, 56, 14" CvTextArgument="For sale" CvType="Button" DesignTimeRectangle="601, 449, 180, 40" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='For sale' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='For sale' tag='BUTTON' type='' class='StyledButton-c11n-8-104-2__sc-iv7357-0 jenQx' check:innerText='For sale' /&gt;" Guid="2faefd80-1019-4a0c-8720-d09eac7c4ad7" InformativeScreenshot="357795800434ad19534576205f407dbc.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zillow: Real Estate, Apartments, Mortgages &amp;amp; Home Values' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home Type' Button" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5b604df3-1327-42ba-aa8d-75f462bbcec0" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/homes/for_sale/05101_rb/" CVScreenId="a9395af2-206c-4950-9f37-8980901a20ec" CvTextArea="969, 218, 72, 15" CvTextArgument="Home Type" CvType="Text" DesignTimeRectangle="948, 209, 135, 33" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='home-type' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='home-type' tag='BUTTON' type='' class='StyledButton-c11n-8-105-0__sc-iv7357-0 kLxhQO DropdownButton-c11n-8-105-0__sc-1nhw8sf-0 dialog__StyledDropdownButton-srp-8-105-0__sc-fdndby-3 hduMzW kEyPTB DropdownPopper-c11n-8-105-0__sc-u1wzgh-0 caeCzD' aaname='Home Type' check:innerText='Home Type' /&gt;" Guid="fdf3c2a4-2b00-4499-8eac-c4398325cafd" InformativeScreenshot="b4a14cf465fbc1bc86b589a06ba27b4a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='05101 Real Estate - 05101 Homes For Sale | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Deselect All' Option" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5b604df3-1327-42ba-aa8d-75f462bbcec0" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/homes/for_sale/05101_rb/" CVScreenId="c4a020b6-e9a5-4c40-816b-4b4496a51fd6" CvTextArea="990, 295, 76, 13" CvTextArgument="Deselect All" CvType="Text" DesignTimeRectangle="963, 292, 102, 21" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Deselect All' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Deselect All' tag='BUTTON' type='button' class='StyledTextButton-c11n-8-105-0__sc-1nwmfqo-0 ceVzR' check:innerText='Deselect All' /&gt;" Guid="3e4acb2f-1ce7-4561-95fe-3f8e9e31483e" InformativeScreenshot="995c92746ebc9efaa9cffcbdfa221431.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='05101 Real Estate - 05101 Homes For Sale | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NCheck Action="Check" AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Check'Houses' Option" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NCheck_1" OutUiElement="{x:Null}" ScopeIdentifier="5b604df3-1327-42ba-aa8d-75f462bbcec0" Timeout="{x:Null}" Version="V4">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/oh/houses/?searchQueryState=%7B%22pagination%22%3A%7B%7D%2C%22isMapVisible%22%3Atrue%2C%22mapBounds%22%3A%7B%22west%22%3A-86.8880025%2C%22east%22%3A-78.4505025%2C%22south%22%3A38.13586520100869%2C%22north%22%3A42.57857994651005%7D%2C%22usersSearchTerm%22%3A%22OH%22%2C%22regionSelection%22%3A%5B%7B%22regionId%22%3A44%2C%22regionType%22%3A2%7D%5D%2C%22filterState%22%3A%7B%22sort%22%3A%7B%22value%22%3A%22globalrelevanceex%22%7D%2C%22ah%22%3A%7B%22value%22%3Atrue%7D%2C%22tow%22%3A%7B%22value%22%3Afalse%7D%2C%22mf%22%3A%7B%22value%22%3Afalse%7D%2C%22con%22%3A%7B%22value%22%3Afalse%7D%2C%22land%22%3A%7B%22value%22%3Afalse%7D%2C%22apa%22%3A%7B%22value%22%3Afalse%7D%2C%22manu%22%3A%7B%22value%22%3Afalse%7D%2C%22apco%22%3A%7B%22value%22%3Afalse%7D%7D%2C%22isListVisible%22%3Atrue%2C%22mapZoom%22%3A7%7D" CVScreenId="4c038fa6-7804-4d8c-8bd3-2bdcffb5d953" CvElementArea="707, 337, 22, 22" CvType="CheckBox" DesignTimeRectangle="709, 339, 18, 18" DesignTimeScaleFactor="0.8999999761581421" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='home-type_isSingleFamily' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='home-type_isSingleFamily' tag='INPUT' type='checkbox' class='StyledFormControl-c11n-8-105-0__sc-w61kvv-0 QSOdb StyledCheckbox-c11n-8-105-0__sc-13jdanj-0 gTyrQc StyledFilterCheckbox__StyledCheckbox-srp-8-105-0__sc-9abn3d-2 jODnGF' aaname='Houses ' /&gt;" Guid="d82f0149-103c-41ad-9a53-204f5a5b0de7" ImageBase64="" InformativeScreenshot="9acc337de581a4c54764580f26c000e7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Ohio Single Family Homes For Sale - 19574 Homes | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="4c038fa6-7804-4d8c-8bd3-2bdcffb5d953" CvTextArea="733, 339, 51, 13" CvTextArgument="Houses" CvType="Text" DesignTimeRectangle="727, 335, 61, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Houses ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Houses ' tag='LABEL' type='' class='StyledLabel-c11n-8-105-0__sc-14wqmdp-0 jfuYKo short-label' check:innerText='Houses' /&gt;" Guid="e836b3ce-2f0d-437c-ad7d-23193eefc014" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply' Button" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5b604df3-1327-42ba-aa8d-75f462bbcec0" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.zillow.com/miami-fl/houses/?searchQueryState=%7B%22pagination%22%3A%7B%7D%2C%22isMapVisible%22%3Atrue%2C%22mapBounds%22%3A%7B%22west%22%3A-80.87181425000001%2C%22east%22%3A-79.81712675000001%2C%22south%22%3A25.3742730676936%2C%22north%22%3A26.031333485180703%7D%2C%22usersSearchTerm%22%3A%22Miami%20FL%22%2C%22regionSelection%22%3A%5B%7B%22regionId%22%3A12700%2C%22regionType%22%3A6%7D%5D%2C%22filterState%22%3A%7B%22sort%22%3A%7B%22value%22%3A%22globalrelevanceex%22%7D%2C%22ah%22%3A%7B%22value%22%3Atrue%7D%2C%22tow%22%3A%7B%22value%22%3Afalse%7D%2C%22mf%22%3A%7B%22value%22%3Afalse%7D%2C%22con%22%3A%7B%22value%22%3Afalse%7D%2C%22land%22%3A%7B%22value%22%3Afalse%7D%2C%22apa%22%3A%7B%22value%22%3Afalse%7D%2C%22manu%22%3A%7B%22value%22%3Afalse%7D%2C%22apco%22%3A%7B%22value%22%3Afalse%7D%7D%2C%22isListVisible%22%3Atrue%7D" CVScreenId="8dde7c4c-d076-4817-a950-ab845a1644d0" CvElementArea="962, 617, 162, 43" CvTextArea="1021, 630, 44, 17" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="963, 618, 160, 40" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Apply' parentid='home-type' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apply' parentid='home-type' tag='BUTTON' type='' class='StyledButton-c11n-8-105-0__sc-iv7357-0 fUcIwv' check:innerText='Apply' /&gt;" Guid="42d3d918-d610-41ef-b474-3a9cdd856231" InformativeScreenshot="c853eccfe382e88fc2a3fe1b274ebf93.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Miami FL Single Family Homes For Sale - 1366 Homes | Zillow' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
