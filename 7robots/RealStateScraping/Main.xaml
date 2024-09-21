@@ -43,6 +43,7 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities.Business</x:String>
       <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -110,7 +111,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="693,4368" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="784,5242" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="City" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_ExtractDataTable" />
@@ -122,7 +123,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Get City" sap:VirtualizedContainerService.HintSize="631,57" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter a US City" Title="Get location">
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Get City" sap:VirtualizedContainerService.HintSize="722,57" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter a US City" Title="Get location">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[City]</OutArgument>
       </ui:InputDialog.Result>
@@ -133,13 +134,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InputDialog>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Zillow: Real Estate, Apartments, Mortgages &amp; Home Values" sap:VirtualizedContainerService.HintSize="631,2336" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="5b604df3-1327-42ba-aa8d-75f462bbcec0" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Zillow: Real Estate, Apartments, Mortgages &amp; Home Values" sap:VirtualizedContainerService.HintSize="722,2336" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="IfNotOpen" ScopeGuid="5b604df3-1327-42ba-aa8d-75f462bbcec0" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2087" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Web Scraping" sap:VirtualizedContainerService.HintSize="416,2087" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -161,7 +162,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Press 'Enter' Key" sap:VirtualizedContainerService.HintSize="354,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
               <uix:NKeyboardShortcuts.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                   <uix:VerifyExecutionOptions.Retry>
@@ -312,37 +313,59 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:OutputDataTable DataTable="[dt_ExtractDataTable]" DisplayName="Output ExtractedDataTable" sap:VirtualizedContainerService.HintSize="631,112" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[TexTable]" />
-    <ui:LogMessage DisplayName="Log FilteredDataTable" sap:VirtualizedContainerService.HintSize="631,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Extracted data: &quot; &amp; vbCrLf &amp; TexTable]" />
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="631,1602" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="True">
+    <ui:OutputDataTable DataTable="[dt_ExtractDataTable]" DisplayName="Output ExtractedDataTable" sap:VirtualizedContainerService.HintSize="722,112" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[TexTable]" />
+    <ui:LogMessage DisplayName="Log FilteredDataTable" sap:VirtualizedContainerService.HintSize="722,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Extracted data: &quot; &amp; vbCrLf &amp; TexTable]" />
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Save scraped data into Excel file" sap:VirtualizedContainerService.HintSize="722,2476" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="True">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="597,1492" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Prepare Excel file" sap:VirtualizedContainerService.HintSize="688,2366" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="535,1404" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="DisplayValue" ResizeWindow="Minimize" SensitivityOperation="None" WorkbookPath="Scraping/HouseInformation.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Create/Open Excel File" sap:VirtualizedContainerService.HintSize="626,2278" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="DisplayValue" ResizeWindow="Minimize" SensitivityOperation="None" WorkbookPath="Scraping/HouseInformation.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Prepare Excel Sheet" sap:VirtualizedContainerService.HintSize="501,1112" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Prepare Excel Sheet" sap:VirtualizedContainerService.HintSize="592,1986" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:DeleteSheetX DisplayName="Delete Existing Sheet" sap:VirtualizedContainerService.HintSize="439,122" sap2010:WorkflowViewState.IdRef="DeleteSheetX_1" Sheet="[Excel.Sheet(City.ToUpper)]" />
-                    <ueab:WriteRangeX Destination="[Excel.Sheet(City.ToUpper)]" DisplayName="Write Filtered data to Excel Sheet" sap:VirtualizedContainerService.HintSize="439,191" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="True" Source="[dt_FilteredDataTable]" />
-                    <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert 'StreetAddress' Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,240" sap2010:WorkflowViewState.IdRef="InsertColumnX_1" NewColumnName="StreetAddress" Range="[Excel.Sheet(City.ToUpper)]" RelativeColumnName="FullAddress" RelativePosition="After" />
-                    <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert 'City' Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,240" sap2010:WorkflowViewState.IdRef="InsertColumnX_2" NewColumnName="City" Range="[Excel.Sheet(City.ToUpper)]" RelativeColumnName="StreetAddress" RelativePosition="After" />
-                    <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert 'ZipCode' Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,231" sap2010:WorkflowViewState.IdRef="InsertColumnX_3" NewColumnName="ZipCode" Range="[Excel.Sheet(City.ToUpper)]" RelativeColumnName="City" RelativePosition="After" />
+                    <ueab:DeleteSheetX DisplayName="Delete Existing Sheet" sap:VirtualizedContainerService.HintSize="530,122" sap2010:WorkflowViewState.IdRef="DeleteSheetX_1" Sheet="[Excel.Sheet(City.ToUpper)]" />
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(City.ToUpper)]" DisplayName="Write Filtered data to Excel Sheet" sap:VirtualizedContainerService.HintSize="530,191" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="True" Source="[dt_FilteredDataTable]" />
+                    <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert 'StreetAddress' Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="530,240" sap2010:WorkflowViewState.IdRef="InsertColumnX_1" NewColumnName="StreetAddress" Range="[Excel.Sheet(City.ToUpper)]" RelativeColumnName="FullAddress" RelativePosition="After" />
+                    <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert 'City' Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="530,240" sap2010:WorkflowViewState.IdRef="InsertColumnX_2" NewColumnName="City" Range="[Excel.Sheet(City.ToUpper)]" RelativeColumnName="StreetAddress" RelativePosition="After" />
+                    <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert 'ZipCode' Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="530,240" sap2010:WorkflowViewState.IdRef="InsertColumnX_3" NewColumnName="ZipCode" Range="[Excel.Sheet(City.ToUpper)]" RelativeColumnName="City" RelativePosition="After" />
+                    <ueab:ExcelForEachRowX DisplayName="Iterate Data" EmptyRowBehavior="Stop" HasHeaders="False" sap:VirtualizedContainerService.HintSize="530,865" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(City.ToUpper)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Add information to new columns" sap:VirtualizedContainerService.HintSize="496,652" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:WriteCellX Cell="[CurrentRow(&quot;StreetAddress&quot;)]" DisplayName="Write StreedtAddress Cell" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[CurrentRow(&quot;FullAddress&quot;).ToString.Split(&quot;,&quot;c)(0).Trim]" />
+                            <ueab:WriteCellX Cell="[CurrentRow(&quot;City&quot;)]" DisplayName="Write City Cell" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[CurrentRow(&quot;FullAddress&quot;).ToString.Split(&quot;,&quot;c)(1).Trim]" />
+                            <ueab:WriteCellX Cell="[CurrentRow(&quot;ZipCode&quot;)]" DisplayName="Write ZipCode Cell" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[CurrentRow(&quot;FullAddress&quot;).ToString.Split(&quot;,&quot;c)(2).Trim.Split(&quot; &quot;c)(1).Trim]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                    </ueab:ExcelForEachRowX>
                   </Sequence>
                 </ActivityAction>
               </ueab:ExcelApplicationCard.Body>
