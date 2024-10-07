@@ -37,6 +37,8 @@
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -96,15 +98,18 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="608,1641" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="742,1884" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEachFileX DisplayName="Iterate PDF Files in Input Folder" Filter="*.pdf" Folder="C:\Users\Usuario\Downloads\uipath\7robots\PDFDataScraping\Input" sap:VirtualizedContainerService.HintSize="546,1553" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+    <ui:ForEachFileX DisplayName="Iterate PDF Files in Input Folder" Filter="*.pdf" Folder="C:\Users\Usuario\Downloads\7robots\7robots\PDFDataScraping\Input" sap:VirtualizedContainerService.HintSize="518,1861" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -113,7 +118,7 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
           </ActivityAction.Argument2>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1272" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,1580" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -121,19 +126,22 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:LogMessage DisplayName="Log File name" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;File name: &quot; &amp; CurrentFile.Name]" />
             <ui:Comment DisplayName="Comment to install Adobe" sap:VirtualizedContainerService.HintSize="450,107" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// This bot uses Adobe Acrobatic reader. Make sure is installed before continue " />
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: Adobe Reader" sap:VirtualizedContainerService.HintSize="450,904" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Background" OpenMode="Always" ScopeGuid="365e8223-48fe-4dd9-884b-d7d08d840254" Version="V2" WindowResize="Maximize">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: Adobe Reader" sap:VirtualizedContainerService.HintSize="450,1240" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Background" OpenMode="Always" ScopeGuid="365e8223-48fe-4dd9-884b-d7d08d840254" Version="V2" WindowResize="Maximize">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,590" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,926" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="InvoiceNumber" />
+                    </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'File View Modes' Button" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="365e8223-48fe-4dd9-884b-d7d08d840254" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'File View Modes' Button" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="365e8223-48fe-4dd9-884b-d7d08d840254" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="1324, 591, 44, 44" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;wnd cls='AVL_AVView' title='AVTabsContainerView' /&gt;&lt;ctrl name='Right rail' role='tool bar' /&gt;&lt;ctrl name='File View Modes' role='menu button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='AVL_AVView' title='AVTabsContainerView' /&gt;&lt;ctrl name='Right rail' role='tool bar' /&gt;&lt;ctrl name='File View Modes' role='menu button' automationid='' check:text='File View Modes' /&gt;" Guid="c64ed92f-2fee-4168-90a4-ff7db64f5e70" InformativeScreenshot="60ff08077cd60a4af08ceb2e8cfb133c.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='Invoice 1.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
@@ -148,11 +156,11 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Zoom to page level' Option" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="365e8223-48fe-4dd9-884b-d7d08d840254" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Zoom to page level' Option" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="365e8223-48fe-4dd9-884b-d7d08d840254" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable CVScreenId="c25981e9-7cec-438b-af8b-9e54a166bd10" CvElementArea="37, 236, 27, 27" CvTextArea="70, 240, 198, 19" CvType="Icon" DesignTimeRectangle="35, 234, 235, 31" DesignTimeScaleFactor="1" ElementType="Icon" Guid="6fbb751f-d3db-47db-bb69-7a977cd21b12" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAAfCAYAAAAGCTraAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVdSURBVHhe7Zshb9wwFMf3iQ6MDBwYPVgpKxhcpdGp2oImlQ2VZlPZUOk0BY2VDhSEDPQTlJyGioY8/x2/5MV5TnyXXHU5PUs/dWf72e+S979nO9mL1WplFEU5flSsirIQVKyKshBUrIqyEFSsirIQomJdr9fm/v7epJSHhwdzeXkpjqMoyjxExVqWpZdierm6uhLHUhRlOlGxPj09OQFCtFL7xcWFa0f25cJWwSrKYYiKlQpEKbVzseIzF6wuiU+NzBTV1mzLXGg7BM893zKYTayABPv4+NjpuytZUZnt1t6sGMd6E7Pc5Hkmty0aFeucrDdvzIeff83HX/9E3n75IdpNFiuEeXNz00AlZjeFWsSlyYW2Y8D5VxUmE9qWjYp1Tt5//yOKlHj37bdoN1msOAm+vb11Qr27u2v2urOLNS9dVi1zoe1IyEsbYCrWGThtsSJzkjB5/cHECjabjViPQ6bz83OxbT9yU4rL38zkRWmqZolcmbLIA7GM9akDoyoLU5Tt8ruyc2Ww7dTFhOiDy/dzNL6m+NglQ//OeH0bZPF2TPKXj2N9Yr63VKbI6vaOX5Wtjy7hJfHE7eUfLX+dC5pjaH5pvtPh5av1oFjRzuuJSWJFG/apyK7IqNi/Xl9fu2e0Uv99cTdfWP429S74LHbPGIp6vA8JjQVLVvgg4nWxH4wWKUhTfOzSD9Qs9/7wOjtOM48fkwuBxqj74EfHfma+0WfyKxtcufR9GrR3/7bXjr4zcNe0rRue/7TFCobEyus4e4sVS99YwT52tswq3XjgBdULLt4/pU8kMMLgBmN70p5N0vwhkUAdtAl8k+btXZf+WM5/USCBT6P24Y+H9y/ZXsUqsZdYkT2pIJviUQ36oZ72rBDs5Azrg47f9AYXfMJhEw/UlD67ilUaz9OzSZo/JBKogQ2ybYl+tq6hmbvN3vXnILM6v5gdRxRI4FOCffda1PbN9x21P22xPusyeOiFCWRUasehU9iejr9hgWAaUoSQJBY5MI5arM2/g8zF5q59teMQlfWDMlnMryiBTyn2zkefPcP+o/anK1YIkZ8G8zaqQ7sk2J3Fis8oEGQsc1LmxV5Wak+hDrb+UqkhFvAuELxdSp9DijVp/hDZHz635Ier680d8TXmV5TApyT72garIndd+PcZtT9dseKkl0S5ufjcacNnLljeBnYWKz1L5S9DhJCgUaT2UfzNFJe/DBcECEgKeuHwZrzPfGKV2lN87BL6g1NTjFu1we3EjmCPZ9b6GsZ/7Gq/bDsfI8s637elf41S7GufSvt9+34M25+mWPEyBIkRL0VAuCH8ZYnXZ+869juLFY9lUIayJol13zeZ3I1CQMfoBHL4WCQU+Fif+cQKgTT7SDseBd64jxzvD+uPR0aN2D04PW3HtFTBuP4HrzOOFU4rjvpHoDtG9/ty6u9u+3Su/Yg9+SCOO2zfn2/5YGk79OYSR3qLaWex4tkqldiJL16OQMFfqV0ZYoas4kXCM+/KZi3K0LFsqxweCBYZk6AXJPCX10u2o2KVXsrHEhgF+9ZQsPyRTih0JYXpYu0tiRvqJXj6XlU5NGefvjqx4q/UzomKFctclPDdX4gT2ZVOfFHQFwJGX16k02JljBkyK+1p7bK4FazNrG5pP7CMV54dOlQKD5skomJFRpUKPT+FYCnD8gIR83oV7K5guVrYperQvjYBvn92YO8bvpKoHAM4WJLqQ6JiBRAs9p0QH4c/P0WmxaET6rDspcc59N/lUFSwijKdQbFOhQtW96+KMo2DihXgwAnZOPY/dBRFSePgYlUUZR5UrIqyEFSsirIQVKyKsghW5j+SxX+f4ZlnXwAAAABJRU5ErkJggg==" InformativeScreenshot="60724dc1fe579b8b16e5722f6d9bbc39.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AVL_AVPopup' idx='*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target CVScreenId="c25981e9-7cec-438b-af8b-9e54a166bd10" CvTextArea="70, 240, 135, 19" CvTextArgument="Zoom to page level" CvType="Text" DesignTimeRectangle="70, 240, 135, 19" ElementType="Text" Guid="4d786faa-f928-406c-b372-c79e31cb81c8" SearchSteps="CV" TargetType="ComputerVisionBased" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -169,7 +177,19 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <ui:Break sap:VirtualizedContainerService.HintSize="354,50" sap2010:WorkflowViewState.IdRef="Break_1" />
+                    <uix:NGetText DisplayName="Get Text 'Invoice Number'" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="365e8223-48fe-4dd9-884b-d7d08d840254" TextString="[InvoiceNumber]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable CVScreenId="0a134476-0c18-49f0-9939-5bf872978ea1" CvTextArea="976, 230, 22, 9" CvType="AnyWordGroup" DesignTimeRectangle="978, 230, 19, 8" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='5' role='row' /&gt;&lt;ctrl name='?????  ' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="4ee37efb-4652-4bc0-9a94-2db550a59ffa" ImageBase64="" InformativeScreenshot="1b3eb647713641eee120457269d44a5d.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='Invoice 1.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target CVScreenId="0a134476-0c18-49f0-9939-5bf872978ea1" CvTextArea="976, 217, 64, 9" CvTextArgument="Invoice Number" CvType="Text" DesignTimeRectangle="978, 219, 62, 8" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='4' role='row' /&gt;&lt;ctrl name='Invoice Number  ' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl name='Invoice Number  ' role='text' automationid='' check:text='Invoice Number' /&gt;" Guid="7406db3d-1232-41d5-a3a1-103877cef373" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Invoice number: &quot; &amp; InvoiceNumber]" />
+                    <ui:Break sap:VirtualizedContainerService.HintSize="382,50" sap2010:WorkflowViewState.IdRef="Break_1" />
                   </Sequence>
                 </ActivityAction>
               </uix:NApplicationCard.Body>
