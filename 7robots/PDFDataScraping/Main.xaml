@@ -45,6 +45,7 @@
       <x:String>System.Xml.Serialization</x:String>
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -115,7 +116,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="742,820" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="759,280.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Results" />
       <Variable x:TypeArguments="x:String" Name="InvoiceNumber" />
@@ -131,8 +132,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[dt_Results]" DisplayName="Build Results Data Table" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; default=&quot;0&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:dateTime&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; default=&quot;null&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Total_x0020_Amount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; default=&quot;0&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;File_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Error_x0020_Message&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; default=&quot;No error &quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:ForEachFileX DisplayName="Iterate PDF Files in Input Folder" Filter="*.pdf" Folder="C:\Users\Usuario\Downloads\7robots\7robots\PDFDataScraping\Input" sap:VirtualizedContainerService.HintSize="450,705" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+    <ui:BuildDataTable DataTable="[dt_Results]" DisplayName="Build Results Data Table" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; default=&quot;0&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:dateTime&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Customer_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; default=&quot;null&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Total_x0020_Amount&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; default=&quot;0&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;File_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Error_x0020_Message&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; default=&quot;No error &quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ForEachFileX DisplayName="Iterate PDF Files in Input Folder" Filter="*.pdf" Folder="C:\Users\Usuario\Downloads\7robots\7robots\PDFDataScraping\Input" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -141,21 +142,22 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
           </ActivityAction.Argument2>
-          <Sequence sap:VirtualizedContainerService.HintSize="416,424" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <Sequence sap:VirtualizedContainerService.HintSize="542,1465" sap2010:WorkflowViewState.IdRef="Sequence_18">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <TryCatch DisplayName="Try Data scraping" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+            <TryCatch DisplayName="Try Data scraping" sap:VirtualizedContainerService.HintSize="508,907" sap2010:WorkflowViewState.IdRef="TryCatch_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <TryCatch.Try>
-                <Sequence sap:VirtualizedContainerService.HintSize="484,108" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                <Sequence sap:VirtualizedContainerService.HintSize="502,138" sap2010:WorkflowViewState.IdRef="Sequence_17">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -192,7 +194,7 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,283" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,279" sap2010:WorkflowViewState.IdRef="Sequence_15">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -220,7 +222,7 @@
                                   </uix:VerifyExecutionOptions>
                                 </uix:NClick.VerifyOptions>
                               </uix:NClick>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Zoom to page level' Option" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="365e8223-48fe-4dd9-884b-d7d08d840254" Version="V4">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Zoom to page level' Option" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="365e8223-48fe-4dd9-884b-d7d08d840254" Version="V4">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable CVScreenId="c25981e9-7cec-438b-af8b-9e54a166bd10" CvElementArea="37, 236, 27, 27" CvTextArea="70, 240, 198, 19" CvType="Icon" DesignTimeRectangle="35, 234, 235, 31" DesignTimeScaleFactor="1" ElementType="Icon" Guid="6fbb751f-d3db-47db-bb69-7a977cd21b12" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAAfCAYAAAAGCTraAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVdSURBVHhe7Zshb9wwFMf3iQ6MDBwYPVgpKxhcpdGp2oImlQ2VZlPZUOk0BY2VDhSEDPQTlJyGioY8/x2/5MV5TnyXXHU5PUs/dWf72e+S979nO9mL1WplFEU5flSsirIQVKyKshBUrIqyEFSsirIQomJdr9fm/v7epJSHhwdzeXkpjqMoyjxExVqWpZdierm6uhLHUhRlOlGxPj09OQFCtFL7xcWFa0f25cJWwSrKYYiKlQpEKbVzseIzF6wuiU+NzBTV1mzLXGg7BM893zKYTayABPv4+NjpuytZUZnt1t6sGMd6E7Pc5Hkmty0aFeucrDdvzIeff83HX/9E3n75IdpNFiuEeXNz00AlZjeFWsSlyYW2Y8D5VxUmE9qWjYp1Tt5//yOKlHj37bdoN1msOAm+vb11Qr27u2v2urOLNS9dVi1zoe1IyEsbYCrWGThtsSJzkjB5/cHECjabjViPQ6bz83OxbT9yU4rL38zkRWmqZolcmbLIA7GM9akDoyoLU5Tt8ruyc2Ww7dTFhOiDy/dzNL6m+NglQ//OeH0bZPF2TPKXj2N9Yr63VKbI6vaOX5Wtjy7hJfHE7eUfLX+dC5pjaH5pvtPh5av1oFjRzuuJSWJFG/apyK7IqNi/Xl9fu2e0Uv99cTdfWP429S74LHbPGIp6vA8JjQVLVvgg4nWxH4wWKUhTfOzSD9Qs9/7wOjtOM48fkwuBxqj74EfHfma+0WfyKxtcufR9GrR3/7bXjr4zcNe0rRue/7TFCobEyus4e4sVS99YwT52tswq3XjgBdULLt4/pU8kMMLgBmN70p5N0vwhkUAdtAl8k+btXZf+WM5/USCBT6P24Y+H9y/ZXsUqsZdYkT2pIJviUQ36oZ72rBDs5Azrg47f9AYXfMJhEw/UlD67ilUaz9OzSZo/JBKogQ2ybYl+tq6hmbvN3vXnILM6v5gdRxRI4FOCffda1PbN9x21P22xPusyeOiFCWRUasehU9iejr9hgWAaUoSQJBY5MI5arM2/g8zF5q59teMQlfWDMlnMryiBTyn2zkefPcP+o/anK1YIkZ8G8zaqQ7sk2J3Fis8oEGQsc1LmxV5Wak+hDrb+UqkhFvAuELxdSp9DijVp/hDZHz635Ier680d8TXmV5TApyT72garIndd+PcZtT9dseKkl0S5ufjcacNnLljeBnYWKz1L5S9DhJCgUaT2UfzNFJe/DBcECEgKeuHwZrzPfGKV2lN87BL6g1NTjFu1we3EjmCPZ9b6GsZ/7Gq/bDsfI8s637elf41S7GufSvt9+34M25+mWPEyBIkRL0VAuCH8ZYnXZ+869juLFY9lUIayJol13zeZ3I1CQMfoBHL4WCQU+Fif+cQKgTT7SDseBd64jxzvD+uPR0aN2D04PW3HtFTBuP4HrzOOFU4rjvpHoDtG9/ty6u9u+3Su/Yg9+SCOO2zfn2/5YGk79OYSR3qLaWex4tkqldiJL16OQMFfqV0ZYoas4kXCM+/KZi3K0LFsqxweCBYZk6AXJPCX10u2o2KVXsrHEhgF+9ZQsPyRTih0JYXpYu0tiRvqJXj6XlU5NGefvjqx4q/UzomKFctclPDdX4gT2ZVOfFHQFwJGX16k02JljBkyK+1p7bK4FazNrG5pP7CMV54dOlQKD5skomJFRpUKPT+FYCnD8gIR83oV7K5guVrYperQvjYBvn92YO8bvpKoHAM4WJLqQ6JiBRAs9p0QH4c/P0WmxaET6rDspcc59N/lUFSwijKdQbFOhQtW96+KMo2DihXgwAnZOPY/dBRFSePgYlUUZR5UrIqyEFSsirIQVKyKsghW5j+SxX+f4ZlnXwAAAABJRU5ErkJggg==" InformativeScreenshot="60724dc1fe579b8b16e5722f6d9bbc39.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AVL_AVPopup' idx='*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
@@ -242,7 +244,7 @@
                                 </uix:NClick.VerifyOptions>
                               </uix:NClick>
                             </Sequence>
-                            <Sequence DisplayName="Get file data" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                            <Sequence DisplayName="Get file data" sap:VirtualizedContainerService.HintSize="450,543" sap2010:WorkflowViewState.IdRef="Sequence_14">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -283,7 +285,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NGetText>
-                              <uix:NGetText DisplayName="Get 'company name'" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="365e8223-48fe-4dd9-884b-d7d08d840254" TextString="[CompanyName]" Version="V4">
+                              <uix:NGetText DisplayName="Get 'company name'" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="365e8223-48fe-4dd9-884b-d7d08d840254" TextString="[CompanyName]" Version="V4">
                                 <uix:NGetText.Target>
                                   <uix:TargetAnchorable CVScreenId="898b6856-507b-4019-96f7-3a6923c4fdaf" CvTextArea="692, 283, 24, 8" CvType="AnyWordGroup" DesignTimeRectangle="694, 284, 22, 8" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='7' role='row' /&gt;&lt;ctrl name='*' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="154652a9-a545-45f4-8f7c-d02229c86b8d" ImageBase64="" InformativeScreenshot="ff2a73f790294a0503acb6e8eb398164.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='Invoice 1.pdf - Adobe Acrobat Reader (64-bit)' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
@@ -295,7 +297,7 @@
                                 </uix:NGetText.Target>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -318,7 +320,7 @@
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NGetText>
                             </Sequence>
-                            <Assign sap:VirtualizedContainerService.HintSize="450,107" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign DisplayName="Assign success status" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Assign_6">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[Status]</OutArgument>
                               </Assign.To>
@@ -343,7 +345,7 @@
                 </Sequence>
               </TryCatch.Try>
               <TryCatch.Catches>
-                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="474,522" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="474,713" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -354,21 +356,21 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                     </ActivityAction.Argument>
-                    <Sequence sap:VirtualizedContainerService.HintSize="468,452" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <Sequence sap:VirtualizedContainerService.HintSize="468,643" sap2010:WorkflowViewState.IdRef="Sequence_19">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_9">
+                      <Assign DisplayName="Assign srcraping status" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_9">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[Status]</OutArgument>
                         </Assign.To>
                         <Assign.Value>
-                          <InArgument x:TypeArguments="x:String">Fail</InArgument>
+                          <InArgument x:TypeArguments="x:String">Failed</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_10">
+                      <Assign DisplayName="Assign Error message" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_10">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[ErrorMessage]</OutArgument>
                         </Assign.To>
@@ -376,13 +378,21 @@
                           <InArgument x:TypeArguments="x:String">[exception.Message]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Error" Message="[exception.Message]" />
+                      <ui:LogMessage DisplayName="Log Error Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Error" Message="[exception.Message]" />
+                      <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="C:\Users\Usuario\Downloads\7robots\7robots\PDFDataScraping\Output\Failed" DisplayName="Move PDF File to Failed folder" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[CurrentFile.FullName]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:MoveFile>
                     </Sequence>
                   </ActivityAction>
                 </Catch>
               </TryCatch.Catches>
             </TryCatch>
-            <ui:ClearDataTable DataTable="[dt_Results]" DisplayName="Clear Results Data Table" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="ClearDataTable_3">
+            <ui:ClearDataTable DataTable="[dt_Results]" DisplayName="Clear Results Data Table" sap:VirtualizedContainerService.HintSize="508,57" sap2010:WorkflowViewState.IdRef="ClearDataTable_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -390,7 +400,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ClearDataTable>
-            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[new Object() {InvoiceNumber, InvoiceDate, CompanyName, Total, FileName, Status, ErrorMessage}]" DataTable="[dt_Results]" DisplayName="Add Data Row to Results" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="AddDataRow_3">
+            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[new Object() {InvoiceNumber, InvoiceDate, CompanyName, Total, FileName, Status, ErrorMessage}]" DataTable="[dt_Results]" DisplayName="Add Data Row to Results Data table" sap:VirtualizedContainerService.HintSize="508,57" sap2010:WorkflowViewState.IdRef="AddDataRow_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -398,7 +408,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:AddDataRow>
-            <ui:AppendRange DataTable="[dt_Results]" DisplayName="Append Range to ouput sheet" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="AppendRange_3" SheetName="Sheet1" WorkbookPath="Ouput\ScrapedInvoiceOutput.xlsx">
+            <ui:AppendRange DataTable="[dt_Results]" DisplayName="Append Range to ouput File" sap:VirtualizedContainerService.HintSize="508,57" sap2010:WorkflowViewState.IdRef="AppendRange_3" SheetName="Sheet1" WorkbookPath="Output\ScrapedInvoiceOutput.xlsx">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -406,8 +416,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:AppendRange>
-            <ui:Comment sap:VirtualizedContainerService.HintSize="382,88" sap2010:WorkflowViewState.IdRef="Comment_5" Text="// Carriage return &amp; Line feed --&gt; vbCrLf" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Invoice number: &quot; &amp; InvoiceNumber &amp; vbCrLf &amp;&#xA;&quot;Date: &quot; &amp; InvoiceDate &amp; InvoiceNumber &amp; vbCrLf &amp;&#xA;&quot;Company name: &quot; &amp; CompanyName  &amp; vbCrLf &amp;&#xA;&quot;Total: &quot; &amp; Total]">
+            <ui:Comment DisplayName="Comment about Line feed" sap:VirtualizedContainerService.HintSize="508,88" sap2010:WorkflowViewState.IdRef="Comment_5" Text="// Carriage return &amp; Line feed --&gt; vbCrLf" />
+            <ui:LogMessage DisplayName="Log Scraped Information" sap:VirtualizedContainerService.HintSize="508,57" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Invoice number: &quot; &amp; InvoiceNumber &amp; vbCrLf &amp;&#xA;&quot;Date: &quot; &amp; InvoiceDate &amp; InvoiceNumber &amp; vbCrLf &amp;&#xA;&quot;Company name: &quot; &amp; CompanyName  &amp; vbCrLf &amp;&#xA;&quot;Total: &quot; &amp; Total]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -415,9 +425,23 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
+            <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="C:\Users\Usuario\Downloads\7robots\7robots\PDFDataScraping\Output\Successful" DisplayName="Move PDF File to Success folder" sap:VirtualizedContainerService.HintSize="508,182" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[CurrentFile.FullName]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:MoveFile>
           </Sequence>
         </ActivityAction>
       </ui:ForEachFileX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachFileX>
   </Sequence>
 </Activity>
