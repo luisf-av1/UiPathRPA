@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lymxJb-acka1q2urce233g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpasamples.com/findunicornname" CVScreenId="b8b839a9-1c3d-4ff9-ac3b-1c9e377759c9" CvTextArea="875, 679, 194, 20" CvType="AnyWordGroup" DesignTimeRectangle="875, 676, 193, 22" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='lblUnicornName' tag='DIV' type='' class='output-text' /&gt;" Guid="18db79ea-2f2d-4fdd-aebf-2f8a01602aac" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Find Unicorn Name' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b8b839a9-1c3d-4ff9-ac3b-1c9e377759c9" CvTextArea="871, 629, 192, 15" CvTextArgument="This is your unicorn name" CvType="Text" DesignTimeRectangle="873, 625, 190, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='outputBlock' tag='SPAN' type='' class='output-block-title' aaname='This is your unicorn name' check:innerText='This is your unicorn name' /&gt;" Guid="9e75ae39-ba29-449d-99c1-d0a9fb69fc11" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c77b7050fa8a53d076839c680f825542.png" xmlns="">0M1HKCVjNckKm5DJ67xtcsw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Find Unicorn Name - Google Chrome(1)",
+  "Type": "App",
+  "Id": "-YZuE5GIzUesYuIj19LWbw",
+  "Reference": "sab68O1Pfkyh5XwPJNpQOA/-YZuE5GIzUesYuIj19LWbw",
+  "Created": "2024-10-17T20:31:01.7649806Z",
+  "Updated": "2024-10-17T20:31:01.7649806Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

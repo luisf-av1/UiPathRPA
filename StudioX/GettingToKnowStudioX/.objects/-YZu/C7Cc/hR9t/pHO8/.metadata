@@ -1,0 +1,14 @@
+﻿{
+  "Name": "This is your unicorn na…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "pHO8C7lMrUKU_5adZhxefw",
+  "Reference": "sab68O1Pfkyh5XwPJNpQOA/pHO8C7lMrUKU_5adZhxefw",
+  "ParentRef": "sab68O1Pfkyh5XwPJNpQOA/hR9tn6gZf0KhzA9N63kHyw",
+  "Created": "2024-10-17T20:31:02.1705107Z",
+  "Updated": "2024-10-17T20:31:02.1705107Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

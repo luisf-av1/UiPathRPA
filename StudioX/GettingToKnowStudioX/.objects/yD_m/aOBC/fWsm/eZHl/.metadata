@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Get Unicorn Name",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "eZHlOzOae0y-HX0b04Lj7A",
+  "Reference": "sab68O1Pfkyh5XwPJNpQOA/eZHlOzOae0y-HX0b04Lj7A",
+  "ParentRef": "sab68O1Pfkyh5XwPJNpQOA/fWsmeEgxZUyCZFG6MEsmjQ",
+  "Created": "2024-10-17T20:08:16.6373415Z",
+  "Updated": "2024-10-17T20:08:16.6373415Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

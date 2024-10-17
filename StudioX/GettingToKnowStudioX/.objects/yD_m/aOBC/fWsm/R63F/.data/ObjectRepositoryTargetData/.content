@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="22RpGUJLq0irzFK0sBMTNg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="193a7fef-a6f9-404b-a2be-a4bbcea6a1b8" CvElementArea="786, 290, 366, 45" CvType="InputBox" DesignTimeRectangle="786, 290, 366, 45" DesignTimeScaleFactor="1" ElementType="InputBox" Guid="935a8481-4d1d-4169-985c-42d4760d17f3" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Find Unicorn Name - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="193a7fef-a6f9-404b-a2be-a4bbcea6a1b8" CvTextArea="787, 269, 152, 19" CvTextArgument="What is your name?*" CvType="Text" DesignTimeRectangle="787, 269, 152, 19" ElementType="Text" Guid="6841102a-c935-4d6c-aac9-86460a5c1aa3" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0c6f2b565787c1d3a6643d20e79b4cf5.png" xmlns="">0u_VQ4Ni3eUqHrByQCLoopw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

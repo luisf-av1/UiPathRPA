@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tu5VZjaESE6y8palL1m5Ow" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="41522a68-fcc5-41c5-b544-6ba3ed8c4344" CvElementArea="877, 496, 182, 47" CvTextArea="897, 512, 141, 15" CvTextArgument="Get Unicorn Name" CvType="Button" DesignTimeRectangle="877, 496, 182, 47" DesignTimeScaleFactor="1" ElementType="Button" Guid="f32c005a-95d0-494f-97d1-911c4a8ceeaf" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Find Unicorn Name - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="205551d8db463a47112bb7cdedab77c8.png" xmlns="">0V0AdW6uZvkSXheriKnjjQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
