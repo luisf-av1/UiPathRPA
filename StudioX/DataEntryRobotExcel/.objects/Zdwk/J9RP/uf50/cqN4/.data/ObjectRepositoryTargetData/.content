@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wAJCUgaFTkCptEV6bj5PRw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/first-automation/vendor" CVScreenId="6dd1bf9e-ff96-4389-8011-77072238c1a8" CvTextArea="467, 563, 72, 31" CvType="AnyWordGroup" DesignTimeRectangle="468, 562, 399, 117" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='discount' tag='H2' type='' class='discount no-discount' /&gt;" Guid="a53eab1e-8b5c-4b9a-a743-8b714bf5ff7d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6dd1bf9e-ff96-4389-8011-77072238c1a8" CvTextArea="467, 515, 106, 20" CvTextArgument="Discount" CvType="Text" DesignTimeRectangle="468, 513, 105, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='product-card' tag='H1' type='' class='' aaname='Discount' check:innerText='Discount' /&gt;" Guid="a9db1c4f-bb58-4725-bdcd-3fd557a99aa7" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bbdd3510e07e291e3cdde24473d08876.png" xmlns="">04clYuyIbCEe_pm2sPapLzQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
