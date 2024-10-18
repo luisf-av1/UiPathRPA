@@ -116,9 +116,10 @@
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="518,963.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="630.6666666666666,1028.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <ueab:SequenceX.Variables>
       <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
       <Variable x:TypeArguments="x:String" Name="CurrentInvoice" />
@@ -128,7 +129,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <umab:GmailApplicationCard Account="{x:Null}" ClientId="{x:Null}" ClientSecret="{x:Null}" EmailAddress="{x:Null}" ConnectionAccountName="luis.arroyave@neostella.com" ConnectionId="16fb5e82-66ec-4c92-91f4-3b1d1c66c7ca" DisplayName="Use Gmail" sap:VirtualizedContainerService.HintSize="518,115.33333333333333" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="True">
+    <umab:GmailApplicationCard Account="{x:Null}" ClientId="{x:Null}" ClientSecret="{x:Null}" EmailAddress="{x:Null}" ConnectionAccountName="luis.arroyave@neostella.com" ConnectionId="16fb5e82-66ec-4c92-91f4-3b1d1c66c7ca" DisplayName="Use Gmail" sap:VirtualizedContainerService.HintSize="498,115.33333333333333" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="True">
       <umab:GmailApplicationCard.Body>
         <ActivityAction x:TypeArguments="um:IMailQuickHandle">
           <ActivityAction.Argument>
@@ -186,19 +187,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </umab:GmailApplicationCard>
-    <ugad:GoogleDriveApplicationScope Account="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" Timeout="{x:Null}" UserEmail="{x:Null}" ConnectionAccountName="luis.arroyave@neostella.com" ConnectionId="7870e8e9-378d-4a47-9eae-fe72d2a64c4a" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="518,825.3333333333334" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="True">
+    <ugad:GoogleDriveApplicationScope Account="{x:Null}" ContinueOnError="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" Timeout="{x:Null}" UserEmail="{x:Null}" ConnectionAccountName="luis.arroyave@neostella.com" ConnectionId="7870e8e9-378d-4a47-9eae-fe72d2a64c4a" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="498,890.6666666666666" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="True">
       <ugad:GoogleDriveApplicationScope.Body>
         <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ugad:IGoogleDriveTarget" Name="GoogleDrive" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,658" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="464,723.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[string.Format(&quot;{0}\Invoices&quot;, System.IO.Directory.GetCurrentDirectory())]" sap:VirtualizedContainerService.HintSize="450,598" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+            <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[string.Format(&quot;{0}\Invoices&quot;, System.IO.Directory.GetCurrentDirectory())]" sap:VirtualizedContainerService.HintSize="450,686.6666666666666" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
               <ui:ForEachFileX.Body>
                 <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                   <ActivityAction.Argument1>
@@ -207,13 +208,19 @@
                   <ActivityAction.Argument2>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                   </ActivityAction.Argument2>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,305.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,394" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:Comment sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Write your comments in the Text property" />
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="402,88.66666666666667" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Write your comments in the Text property">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:Comment>
                     <uga:UploadFile ContinueOnError="{x:Null}" AuthScopesInvalid="False" Convert="True" DisplayName="Upload File" DriveTarget="[GoogleDrive]" sap:VirtualizedContainerService.HintSize="402,268.6666666666667" sap2010:WorkflowViewState.IdRef="UploadFile_1" LocalFilePath="[CurrentFile.FullName]" ParentFolderName="Dept-Delivery" ParentId="1UTotCR_kqCFrrp1UsRaqV5aphIIicgqZ" ParentIdSelectionMode="EnterId" Result="[CurrentInvoice]" SupportsTeamDrives="False" UpdateExisting="True" />
                   </Sequence>
                 </ActivityAction>
