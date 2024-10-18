@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="i6tuK4po8U-LmoaJUaWCIw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/first-automation/vendor" CVScreenId="093ede97-c08e-4ceb-9093-53a5a4b6e49a" CvElementArea="464, 381, 225, 45" CvType="InputBox" DesignTimeRectangle="468, 382, 178, 43" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='vendor' tag='INPUT' type='email' class='' placeholder='Type the client code' aaname='' /&gt;" Guid="49cfb012-9081-4e9c-b3d7-9436740db085" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="093ede97-c08e-4ceb-9093-53a5a4b6e49a" CvTextArea="468, 344, 706, 22" CvTextArgument="Insert the client code to generate the discount value according to the promotion." CvType="Text" DesignTimeRectangle="468, 340, 1000, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='instructions' parentid='second' tag='DIV' type='' aaname='                 Insert the client code to generate the discount value according to the promotion.             ' check:innerText='Insert the client code to generate the discount value according to the promotion.' /&gt;" Guid="7bcb7503-7791-49b7-b8db-43e297a3fdf5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6cd99a06260df7c4231c97838f374288.png" xmlns="">0qzD8undlYUm8FGlJK23tpw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

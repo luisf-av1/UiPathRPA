@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YEKYumA54EG5vwtTNw-sSA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/first-automation/vendor" DesignTimeRectangle="645, 381, 42, 45" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='submitButton' tag='BUTTON' type='submit' class='' aaname='' /&gt;" Guid="2fc4d927-6fdb-4258-ab5f-4b9778d87e94" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="655, 391, 22, 24" FuzzySelectorArgument="&lt;webctrl parentid='submitButton' tag='I' type='' class='fas fa-arrow-right' aaname='' /&gt;" Guid="e447c4d1-be79-4536-a433-4679452e7172" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="608cbe4357929101e04d84369930edb7.png" xmlns="">0RaXmqlFm4EmYaKg_OQElVA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

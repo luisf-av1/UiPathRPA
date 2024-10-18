@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Discount",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "f1kA1_K4502aQDRSRFkFRw",
+  "Reference": "IH7rDjLw6k-Yn1Bfk0kV4w/f1kA1_K4502aQDRSRFkFRw",
+  "ParentRef": "IH7rDjLw6k-Yn1Bfk0kV4w/CC2NlDmWOECBIpP7_vU5yQ",
+  "Created": "2024-10-18T14:57:20.5442936Z",
+  "Updated": "2024-10-18T14:57:20.5442936Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
