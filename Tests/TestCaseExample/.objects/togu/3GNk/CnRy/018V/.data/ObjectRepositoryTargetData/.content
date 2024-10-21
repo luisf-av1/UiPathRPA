@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_ksOf0WM1kOGOwvG1B8JGA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sha1-online.com" CVScreenId="f47d6b02-9970-46d9-8452-2af8b1357fe9" CvElementArea="922, 404, 92, 21" CvType="InputBox" DesignTimeRectangle="923, 405, 90, 19" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='' aaname='' /&gt;" Guid="35ad73b5-3f40-42fb-b9ae-e32cfc334b31" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f47d6b02-9970-46d9-8452-2af8b1357fe9" CvTextArea="636, 443, 665, 17" CvTextArgument="Result for sha1: deba2a9950e71675d84b6e163984e562b7a930d8" CvType="Text" DesignTimeRectangle="492, 441, 952, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='' aaname='Result for *:  ' /&gt;" Guid="ab54b6d0-e2b4-4914-bf95-268fa58a0a6d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a0fe5364fa334d2d57f95288678f2228.png" xmlns="">0C0DUtkksP0iYJcUHR5Y9dg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
