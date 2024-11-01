@@ -2,9 +2,10 @@
   "name": "DeleteGmailSpam",
   "projectId": "cf5fec98-cd79-4d2d-82f9-3491ff4fc434",
   "description": "Robot to delete all messages in spam folder",
-  "main": "Main.xaml",
+  "main": "DeleteEmails.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.2]",
+    "UiPath.GSuite.Activities": "[2.8.10-preview]",
     "UiPath.Mail.Activities": "[1.23.11]",
     "UiPath.System.Activities": "[24.10.6]",
     "UiPath.Testing.Activities": "[24.10.3]",
@@ -43,14 +44,29 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "83e5d559-f913-49be-a241-00d0376cc3ea",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TS\\TS_DeleteEmails\\TC_VerifyDeleteEmailsCorreclty.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "45934d10-c8a5-40c8-b2ba-41662dc70b2e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TS\\TS_DeleteEmails\\TC_VerifyDoNotDeleteEmails.xaml"
+      }
+    ],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "83740b05-269c-4e4b-809c-b074ad72e5dc",
+      "filePath": "DeleteEmails.xaml",
+      "uniqueId": "cd9d3e94-6991-45b0-a74f-27e4d577ca85",
       "input": [],
       "output": []
     }
