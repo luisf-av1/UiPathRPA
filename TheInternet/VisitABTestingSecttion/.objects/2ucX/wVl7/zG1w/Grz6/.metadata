@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Floating Menu",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Grz6hnB3gk6MbRe5cUVapw",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/Grz6hnB3gk6MbRe5cUVapw",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:43.0296734Z",
+  "Updated": "2024-11-07T18:18:43.0296734Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Broken Images",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "enfIX7I0gUe2rCrfvUNfrA",
+  "Reference": "NZqm3YiEYkWu5nIiOjDn8w/enfIX7I0gUe2rCrfvUNfrA",
+  "ParentRef": "NZqm3YiEYkWu5nIiOjDn8w/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-08T02:05:36.795319Z",
+  "Updated": "2024-11-08T02:05:36.795319Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

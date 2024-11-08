@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Drag and Drop",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "FqmM99bTBUOxqW3O4rNGvQ",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/FqmM99bTBUOxqW3O4rNGvQ",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:34.0626708Z",
+  "Updated": "2024-11-07T18:24:34.0626708Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

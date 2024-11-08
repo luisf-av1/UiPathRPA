@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Nested Frames",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "ojDssG7u10CYE5qNNxOSoA",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/ojDssG7u10CYE5qNNxOSoA",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:43.5356268Z",
+  "Updated": "2024-11-07T18:18:43.5356268Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Basic Auth",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "KKE1oEnlkUe2BVxqL9Ygag",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/KKE1oEnlkUe2BVxqL9Ygag",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:33.9867206Z",
+  "Updated": "2024-11-07T18:24:33.9867206Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

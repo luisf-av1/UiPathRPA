@@ -1,0 +1,13 @@
+﻿{
+  "Name": "File Download",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "uOYTokT78U2opVnEj2AeVg",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/uOYTokT78U2opVnEj2AeVg",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:42.9670031Z",
+  "Updated": "2024-11-07T18:18:42.9670031Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

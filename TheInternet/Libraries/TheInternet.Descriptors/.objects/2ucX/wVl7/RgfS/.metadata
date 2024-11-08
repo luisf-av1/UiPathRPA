@@ -1,0 +1,15 @@
+﻿{
+  "Name": "The Internet | Add/Remove Elements",
+  "Type": "Screen",
+  "Id": "RgfSRFBiw0eYGirMinu6Yg",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/RgfSRFBiw0eYGirMinu6Yg",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/wVl74PknZUeyxuWZuvd4ww",
+  "Created": "2024-11-07T18:24:33.8095056Z",
+  "Updated": "2024-11-07T18:24:33.8095056Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

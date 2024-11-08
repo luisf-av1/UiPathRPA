@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Horizontal Slider",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "2nvHe8lmX0qQEaRTspCjDg",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/2nvHe8lmX0qQEaRTspCjDg",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:43.1993548Z",
+  "Updated": "2024-11-07T18:18:43.1993548Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

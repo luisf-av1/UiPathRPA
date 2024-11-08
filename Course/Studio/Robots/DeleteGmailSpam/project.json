@@ -1,0 +1,91 @@
+{
+  "name": "GmailRPA",
+  "projectId": "cf5fec98-cd79-4d2d-82f9-3491ff4fc434",
+  "description": "Robot to delete all messages in spam folder",
+  "main": "main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.24.2]",
+    "UiPath.GSuite.Activities": "[2.8.10-preview]",
+    "UiPath.Mail.Activities": "[1.23.11]",
+    "UiPath.System.Activities": "[24.10.6]",
+    "UiPath.Testing.Activities": "[24.10.3]",
+    "UiPath.UIAutomation.Activities": "[24.10.6]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.5.0",
+  "projectVersion": "1.0.2",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "83e5d559-f913-49be-a241-00d0376cc3ea",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TS\\TS_DeleteEmails\\TC_VerifyDeleteEmailsCorreclty.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "45934d10-c8a5-40c8-b2ba-41662dc70b2e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TS\\TS_DeleteEmails\\TC_VerifyDoNotDeleteEmails.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4cd9e225-1c7c-4f49-b8a5-5b9869b28433",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TS\\TS_SendEmail\\TC_VerifySendEmailSuccessfully.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Fuctions\\DeleteEmail.xaml",
+      "uniqueId": "603680e5-f276-4bb5-b103-a1691eec8fd9",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "main.xaml",
+      "uniqueId": "07e10a89-c9de-4a76-bcb0-9a016daa0fb4",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

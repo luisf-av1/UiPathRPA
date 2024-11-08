@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Inputs",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "QCaA2Rf-M0SbIEoGoatwew",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/QCaA2Rf-M0SbIEoGoatwew",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:34.2675625Z",
+  "Updated": "2024-11-07T18:24:34.2675625Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

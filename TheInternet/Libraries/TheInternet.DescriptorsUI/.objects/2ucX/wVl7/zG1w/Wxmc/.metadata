@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Disappearing Elements",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "WxmcZud3ukWKJ-gU24bXrg",
+  "Reference": "NZqm3YiEYkWu5nIiOjDn8w/WxmcZud3ukWKJ-gU24bXrg",
+  "ParentRef": "NZqm3YiEYkWu5nIiOjDn8w/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-08T02:05:36.8440756Z",
+  "Updated": "2024-11-08T02:05:36.8440756Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

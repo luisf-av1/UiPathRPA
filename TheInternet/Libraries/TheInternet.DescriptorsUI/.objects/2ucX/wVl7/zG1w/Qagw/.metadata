@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Elemental Selenium",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "QagwtFROlke96WYzdenxIQ",
+  "Reference": "NZqm3YiEYkWu5nIiOjDn8w/QagwtFROlke96WYzdenxIQ",
+  "ParentRef": "NZqm3YiEYkWu5nIiOjDn8w/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-08T02:05:36.9015235Z",
+  "Updated": "2024-11-08T02:05:36.9015235Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

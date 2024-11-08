@@ -1,0 +1,125 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ABTestVariation1" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ABTestVariation1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ABTestVariation1" sap:VirtualizedContainerService.HintSize="563.9999999999999,547.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="The Internet | Home" sap:VirtualizedContainerService.HintSize="450,524.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="4e9fffd6-67de-4930-88e9-083c62a760dc" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,282.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'A/B Testing'" sap:VirtualizedContainerService.HintSize="382,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4e9fffd6-67de-4930-88e9-083c62a760dc" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="47ca9feb-f381-4670-b254-5530ee196861" ContentHash="cEc4CS-HCEi8x-Xb1YwuVQ" CvTextArea="228, 570, 123, 25" CvTextArgument="A/B Testing" CvType="Text" DesignTimeRectangle="231, 567, 121, 27" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='content' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='A' type='' class='' aaname='A/B Testing' check:text='A/B Testing' /&gt;" Guid="636fec51-7eb3-4a7f-91ad-bb50e90d01fe" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAfCAYAAADKvMJ0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAYaSURBVGhD7Vq/SytJHL//J12qdOns7KxS2lnZpbOzOLBKeZVdxJCIovIOgz4iBBSJb0luYwwJEgk5ZYmEFUk8At+b2fnO7OxmdmfN+Xx62Q98wczM7sx8PzPfX+tvEGPhEJO+gIhJX0DEpC8gYtIXEDHpC4iY9AVETPoCQkP6FC5Oa5DIXxG5hlwPm6Ng0IYV8tzS+SP7bZr4ngDZqcHSQQO2zSFM2BNa9KvX6neFyjVsD/AFPxNTG4xqHXJN/M3B9XByjw0fj3DSX3qwLiksddrHDj2sqzp5pga5O2zQkS5JunwPNj4Whs9MeqXM5sua2MDx2Umf/KDEEbJPTCS/AeUX7AzFGI6OyfjdGzCwRWx2rw2qozOxh3BBbkbamacGm+0p9rwVQ9jeo++4gpXqENs+HpUTtoYZ0j8BQkgfQf6AL/wZyt/Y35nLEfaH4OWOHRL5NGtIZxiLeRLkts+HmHQdgknvtWCJKj9vQoVcuonRYGSUWuB3UzNAgrOmdFsjkS6Z7LnNX0TSRwPInxiQ3mVjqaRJTJHvBDgW6qMvG5ApuOOThWtY/X4HzZG0T4xl+BguYi0q886fobpRzLN8eAPlv//BwT68DqH8vQ7LfB8kNsqcdMAg2wg6eIGkN8+Z8oUfn/Zh03kxMb234abXOKPBXx2OZFfwxpsuAsA3Q0+6fXsDy3QtKOkiCSJlJZ/1vTHF1ILtfbc/RccTSeHvRKEBRxaOfejCGu3bYX3JAhu7dvXE+kNJb8AGWtfErm8Oovctv8uz72FDWrezLv67YEL2iP0djXSZ4Da2ETAySfu3XkiEPWDPHnaB68GBhvSJbUHlHH06WXAlSiSnhIZ0qwurdA7aXxmALfQ4BbvThjVU2vqPZ2yXrNx+G7qv2Ejx+gh/4GHwB7mB5j2MdEcMyMnWRprDq9NnFjfR9v0WGMLa0H20PNYmEumBplyYfAPyHkYl3LExMwrnm9VI8kDewDwIJ50f3NSfPWWGMCHrdG6XtHfucparik3T/TrpZge62EQxL+nKmAl16rhabHK5IBZVsREbg3DVGhSkuyZ2VmlucBdkfpmCFGlRRNKppI/bjk+aD2GkP0CuSPu8FswLYjKddRiw/cBaWPpJ2gok7zYtsOXbHoD5SHfn9OChg/0u6f0LY/Y9MoS1jkK61YEMLkB1m61LnIykYxczFxIPRVER7PHNBvn0sQ1dsyXMa2K/ExrwBSOEdJ5VEEmhr1UJ96NCWS/3sCn5Tuf5vTpsVHvQtMY4yIv5SJdusgf3kPX18/errBnDk4hDtKTzAC6KrBu+DT8xf5k6U1Q/dKRz9F1T54n+IyOEdI/v1ItHWf4oWZJkkUT9PW90/etJD16Dj/RHyJXYwLCbINIc4sdkY8CLOUqyopKuC8S0CHkeD2WgGY2EKUysB6hctmD9oAZJ531UvIWrX0+6DaVD9Rq8pJNUhpk28vKwSybGyfX4KS4k4NnPQDrPLEjffFZEgVEPsgrf+bNJ19cz5L1iE0Ii3Q3g9DV2ySL48/jjO3U6F5V0yQS/u3mXPyCRdSpjRZw/VaxD3vFST5A/otYtqD7hzveRpOuid5GFEAkmXXxc0RdfKFzfj2atzW7/6lVA2K0jfToG69bNkxOFGzDmuowaSzHgkTBJwco96EuR+GRIAjY8zHJOLPZaMKE8lH03yYnrJn4vqENJ8nWc9Jk0771I1+TpGSwOUQkkXY7KxUeSMIgon+WWzQq9QSH5O99sFNkhPrc/F+MEevdgk7Uwopj4K3IzxaGXAWzxw0CEV9ncEi6tuHk3Ln8BpJWyTNX3ifk/k04QWpEzYMVJT2fTZyTdVVT08id+SaMTlP6C3+nzYaY7AunpogHr5z3ojuclnEJPOsVk2J+pvaeIorKXcpVOAoneK9UGZIhiRfC2Uwuui08tKB1fCxMr3N57kk6hqr2fUgvGaxKBpMf4/4EflNlMJSb9q6JJAjXqZo66auvKS7cKdx2T/lUhag41yBojT8Y0GfaEr1e565j0L4spdKsYfDs3mgWXckCapB+BFPFJTPqXBk3POrBxSAJGKUWj3wW2jOB/MI1JXzgA/As87p2Z10FTjQAAAABJRU5ErkJggg==" InformativeScreenshot="53bc872a1cbb9fe4606c0fb5fa3ec51f.png" Reference="aIuYpuHYzESyKuf2IUJ4Ng/1LXA_Cffp0KiaZfPTv2AOg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Internet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Label 'A/B Test Variation 1'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="the-internet.herokuapp.com/abtest" CVScreenId="6c4aa55a-180b-45e3-8cc7-a2c087167f6b" ContentHash="_6kZXz0WmUKDKwYyi0lHaA" CvTextArea="240, 335, 377, 36" CvType="AnyWordGroup" DesignTimeRectangle="244, 326, 1455, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='' /&gt;" Guid="d1577fa2-1d52-4f05-8e01-f3bdff468bac" InformativeScreenshot="9ef805c886e12b42c470fce86d9cc63c.png" Reference="aIuYpuHYzESyKuf2IUJ4Ng/pmsOndp_okiiIxtiLvIgOw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Internet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="6c4aa55a-180b-45e3-8cc7-a2c087167f6b" CvTextArea="240, 411, 290, 27" CvTextArgument="Also known as split testing." CvType="Text" DesignTimeRectangle="240, 411, 290, 27" ElementType="Text" Guid="b58504dc-411e-4706-a144-7a7dd4dc5bd0" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1150" BrowserType="Chrome" ContentHash="e44YowwkgkO3vM2FcR0gZQ" IconBase64="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" InformativeScreenshot="72f370aa3ee0995919c66b965c9720ec.jpg" Reference="aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw" Selector="&lt;html app='chrome.exe' title='The Internet' /&gt;" Title="The Internet" Url="https://the-internet.herokuapp.com/" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

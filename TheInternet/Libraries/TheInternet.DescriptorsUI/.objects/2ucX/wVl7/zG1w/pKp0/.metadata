@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Slow Resources",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "pKp0aYso60uqkQ8h09gL-w",
+  "Reference": "NZqm3YiEYkWu5nIiOjDn8w/pKp0aYso60uqkQ8h09gL-w",
+  "ParentRef": "NZqm3YiEYkWu5nIiOjDn8w/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-08T02:05:37.1567787Z",
+  "Updated": "2024-11-08T02:05:37.1567787Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

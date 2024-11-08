@@ -1,0 +1,13 @@
+﻿{
+  "Name": "JavaScript Alerts",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "_dZOEvT95Uu9cF8yyD6ADw",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/_dZOEvT95Uu9cF8yyD6ADw",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:43.37042Z",
+  "Updated": "2024-11-07T18:18:43.37042Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

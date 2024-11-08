@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Key Presses",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "iayJO5LUakqRXBn6JWQMjw",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/iayJO5LUakqRXBn6JWQMjw",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:34.3111217Z",
+  "Updated": "2024-11-07T18:24:34.3111217Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

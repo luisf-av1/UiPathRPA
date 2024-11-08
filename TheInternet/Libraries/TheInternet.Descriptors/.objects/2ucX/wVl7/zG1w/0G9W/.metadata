@@ -1,0 +1,13 @@
+﻿{
+  "Name": "File Upload",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "0G9WGoPYekK76JO2Wy-BQg",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/0G9WGoPYekK76JO2Wy-BQg",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:34.1607356Z",
+  "Updated": "2024-11-07T18:24:34.1607356Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

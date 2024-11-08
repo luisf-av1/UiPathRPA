@@ -1,0 +1,15 @@
+﻿{
+  "Name": "TheInternet",
+  "Description": "The Ineternet web app object repository",
+  "Type": "App",
+  "Id": "2ucXxgewLUGtIMiaeFE36g",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/2ucXxgewLUGtIMiaeFE36g",
+  "Created": "2024-11-07T18:24:33.7611923Z",
+  "Updated": "2024-11-07T18:24:33.7611923Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

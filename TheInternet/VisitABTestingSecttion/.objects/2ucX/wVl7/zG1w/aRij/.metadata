@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Exit Intent",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "aRijY01OwkSlGneplaeglQ",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/aRijY01OwkSlGneplaeglQ",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:42.9319332Z",
+  "Updated": "2024-11-07T18:18:42.9319332Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

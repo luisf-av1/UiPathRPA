@@ -1,0 +1,13 @@
+﻿{
+  "Name": "JQuery UI Menus",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "QQS1sWEylEOx_75vQnSGWA",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/QQS1sWEylEOx_75vQnSGWA",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:43.3360128Z",
+  "Updated": "2024-11-07T18:18:43.3360128Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

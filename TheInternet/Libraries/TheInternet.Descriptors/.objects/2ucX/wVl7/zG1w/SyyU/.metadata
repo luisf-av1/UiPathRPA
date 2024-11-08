@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Notification Messages",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "SyyUVAxyKkyZrVMDAIzS7A",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/SyyUVAxyKkyZrVMDAIzS7A",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:34.3517164Z",
+  "Updated": "2024-11-07T18:24:34.3517164Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

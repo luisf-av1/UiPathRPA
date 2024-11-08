@@ -1,0 +1,12 @@
+﻿{
+  "Name": "The Internet | Basic Auth",
+  "Type": "Screen",
+  "Id": "9CPisFcyUEi4pfzNGG6uUA",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/9CPisFcyUEi4pfzNGG6uUA",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/wVl74PknZUeyxuWZuvd4ww",
+  "Created": "2024-11-07T18:24:01.2891938Z",
+  "Updated": "2024-11-07T18:24:01.2891938Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "A/B Test Variation 1",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "pmsOndp_okiiIxtiLvIgOw",
+  "Reference": "NZqm3YiEYkWu5nIiOjDn8w/pmsOndp_okiiIxtiLvIgOw",
+  "ParentRef": "NZqm3YiEYkWu5nIiOjDn8w/oe7ktZ4a7kmN9lu7iZT1AA",
+  "Created": "2024-11-08T02:05:36.6193509Z",
+  "Updated": "2024-11-08T02:05:36.6193509Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

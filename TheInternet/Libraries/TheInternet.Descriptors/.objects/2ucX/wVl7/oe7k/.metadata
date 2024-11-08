@@ -1,0 +1,15 @@
+﻿{
+  "Name": "The Internet | A/B Test Variation 1",
+  "Type": "Screen",
+  "Id": "oe7ktZ4a7kmN9lu7iZT1AA",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/oe7ktZ4a7kmN9lu7iZT1AA",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/wVl74PknZUeyxuWZuvd4ww",
+  "Created": "2024-11-07T18:24:33.7779543Z",
+  "Updated": "2024-11-07T18:24:33.7779543Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

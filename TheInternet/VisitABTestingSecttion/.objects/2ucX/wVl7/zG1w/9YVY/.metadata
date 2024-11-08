@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Digest Authentication",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "9YVYpg3IU0SBiIQ_dNSamg",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/9YVYpg3IU0SBiIQ_dNSamg",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:42.6630197Z",
+  "Updated": "2024-11-07T18:18:42.6630197Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

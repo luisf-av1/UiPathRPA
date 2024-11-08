@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Status Codes",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "tYqmRCp7E0q7y5i7ya0bDg",
+  "Reference": "NZqm3YiEYkWu5nIiOjDn8w/tYqmRCp7E0q7y5i7ya0bDg",
+  "ParentRef": "NZqm3YiEYkWu5nIiOjDn8w/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-08T02:05:37.1759942Z",
+  "Updated": "2024-11-08T02:05:37.1759942Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

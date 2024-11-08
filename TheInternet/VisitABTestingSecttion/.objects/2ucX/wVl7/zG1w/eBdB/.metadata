@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Infinite Scroll",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "eBdBWX0Qyk6_iVrYsH1lmw",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/eBdBWX0Qyk6_iVrYsH1lmw",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:43.2737628Z",
+  "Updated": "2024-11-07T18:18:43.2737628Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

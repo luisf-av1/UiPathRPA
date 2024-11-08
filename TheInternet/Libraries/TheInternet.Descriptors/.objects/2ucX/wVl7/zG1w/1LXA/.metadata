@@ -1,0 +1,13 @@
+﻿{
+  "Name": "A/B Testing",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "1LXA_Cffp0KiaZfPTv2AOg",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/1LXA_Cffp0KiaZfPTv2AOg",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:33.965637Z",
+  "Updated": "2024-11-07T18:24:33.965637Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

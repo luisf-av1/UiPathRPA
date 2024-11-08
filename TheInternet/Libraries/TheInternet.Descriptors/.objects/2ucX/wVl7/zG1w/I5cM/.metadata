@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Redirect Link",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "I5cMpUcbWk2szbKTiclXNA",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/I5cMpUcbWk2szbKTiclXNA",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:34.3615772Z",
+  "Updated": "2024-11-07T18:24:34.3615772Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

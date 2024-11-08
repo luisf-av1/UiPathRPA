@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Shifting Content",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Y2vqpPLCbUiXfbvPzqWUjg",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/Y2vqpPLCbUiXfbvPzqWUjg",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:34.3930347Z",
+  "Updated": "2024-11-07T18:24:34.3930347Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

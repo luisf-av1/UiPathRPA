@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Geolocation",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "b9RcVHV6akurqRImWMbYlQ",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/b9RcVHV6akurqRImWMbYlQ",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:34.2149777Z",
+  "Updated": "2024-11-07T18:24:34.2149777Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

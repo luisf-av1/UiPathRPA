@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Add/Remove Elements",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "9sUFxXnxKECYFePDtcFYKA",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/9sUFxXnxKECYFePDtcFYKA",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:33.9764916Z",
+  "Updated": "2024-11-07T18:24:33.9764916Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

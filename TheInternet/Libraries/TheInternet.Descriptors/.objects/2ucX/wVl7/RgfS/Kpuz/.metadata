@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Add Element",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "KpuzO0NeC0eodJm3udP_Uw",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/KpuzO0NeC0eodJm3udP_Uw",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/RgfSRFBiw0eYGirMinu6Yg",
+  "Created": "2024-11-07T18:24:33.8287121Z",
+  "Updated": "2024-11-07T18:24:33.8287121Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Add/Remove Elements",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "8mGBn1vWkUK7IAy996QhXg",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/8mGBn1vWkUK7IAy996QhXg",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/RgfSRFBiw0eYGirMinu6Yg",
+  "Created": "2024-11-07T18:24:33.847323Z",
+  "Updated": "2024-11-07T18:24:33.847323Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

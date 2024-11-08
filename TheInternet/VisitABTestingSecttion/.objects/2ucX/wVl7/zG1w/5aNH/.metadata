@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Shadow DOM",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "5aNHHfZ2TkmBXq_ehh-Itw",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/5aNHHfZ2TkmBXq_ehh-Itw",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:43.6737166Z",
+  "Updated": "2024-11-07T18:18:43.6737166Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

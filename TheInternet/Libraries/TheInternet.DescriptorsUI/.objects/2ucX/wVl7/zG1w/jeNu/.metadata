@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Hovers",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "jeNuOS3hJEaDZt9CHSUNzA",
+  "Reference": "NZqm3YiEYkWu5nIiOjDn8w/jeNuOS3hJEaDZt9CHSUNzA",
+  "ParentRef": "NZqm3YiEYkWu5nIiOjDn8w/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-08T02:05:37.0024192Z",
+  "Updated": "2024-11-08T02:05:37.0024192Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

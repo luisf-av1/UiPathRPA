@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Frames",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "flPMKUSfuUuJH07QGXpycA",
+  "Reference": "NZqm3YiEYkWu5nIiOjDn8w/flPMKUSfuUuJH07QGXpycA",
+  "ParentRef": "NZqm3YiEYkWu5nIiOjDn8w/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-08T02:05:36.9740352Z",
+  "Updated": "2024-11-08T02:05:36.9740352Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

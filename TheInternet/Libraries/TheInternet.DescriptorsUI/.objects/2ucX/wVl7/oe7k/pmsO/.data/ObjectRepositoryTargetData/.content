@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_6kZXz0WmUKDKwYyi0lHaA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="the-internet.herokuapp.com/abtest" CVScreenId="6c4aa55a-180b-45e3-8cc7-a2c087167f6b" CvTextArea="240, 335, 377, 36" CvType="AnyWordGroup" DesignTimeRectangle="244, 326, 1455, 57" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='' /&gt;" Guid="d1577fa2-1d52-4f05-8e01-f3bdff468bac" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Internet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6c4aa55a-180b-45e3-8cc7-a2c087167f6b" CvTextArea="240, 411, 290, 27" CvTextArgument="Also known as split testing." CvType="Text" DesignTimeRectangle="240, 411, 290, 27" ElementType="Text" Guid="b58504dc-411e-4706-a144-7a7dd4dc5bd0" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9ef805c886e12b42c470fce86d9cc63c.png" xmlns="">0vgo1ApSQakCxnsvTsgl9MA</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

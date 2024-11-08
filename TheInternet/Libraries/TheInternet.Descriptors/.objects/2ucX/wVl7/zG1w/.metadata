@@ -1,0 +1,15 @@
+﻿{
+  "Name": "The Internet | Home",
+  "Type": "Screen",
+  "Id": "zG1wkTmHWEeJEHKvKH90rw",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/wVl74PknZUeyxuWZuvd4ww",
+  "Created": "2024-11-07T18:24:33.9535126Z",
+  "Updated": "2024-11-07T18:24:33.9535126Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Dynamic Controls",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "jKTxtSYEB0CoIa4NYhbcSA",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/jKTxtSYEB0CoIa4NYhbcSA",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:34.0979241Z",
+  "Updated": "2024-11-07T18:24:34.0979241Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

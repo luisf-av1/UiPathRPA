@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Secure File Download",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "00VvGPKcbkOjZj1Dv-IAgQ",
+  "Reference": "aIuYpuHYzESyKuf2IUJ4Ng/00VvGPKcbkOjZj1Dv-IAgQ",
+  "ParentRef": "aIuYpuHYzESyKuf2IUJ4Ng/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:24:34.3714821Z",
+  "Updated": "2024-11-07T18:24:34.3714821Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

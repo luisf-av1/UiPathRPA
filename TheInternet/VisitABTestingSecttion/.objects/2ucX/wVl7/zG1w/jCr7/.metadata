@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sortable Data Tables",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "jCr7QcquY0SWDI7P6oFGqQ",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/jCr7QcquY0SWDI7P6oFGqQ",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:43.7852719Z",
+  "Updated": "2024-11-07T18:18:43.7852719Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Multiple Windows",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "d6E28hxaTE-1kO7myFFVcw",
+  "Reference": "1Fm1LkcDnEis86o6Ephj5g/d6E28hxaTE-1kO7myFFVcw",
+  "ParentRef": "1Fm1LkcDnEis86o6Ephj5g/zG1wkTmHWEeJEHKvKH90rw",
+  "Created": "2024-11-07T18:18:43.5030181Z",
+  "Updated": "2024-11-07T18:18:43.5030181Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
