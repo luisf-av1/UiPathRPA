@@ -1,0 +1,241 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.in_user="admin" this:Main.in_password="admin" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_user" Type="InArgument(x:String)" />
+    <x:Property Name="in_password" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Net</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1204,1364.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="The Internet | Home" sap:VirtualizedContainerService.HintSize="450,1342" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" IsIncognito="True" ScopeGuid="03bbafdc-e687-413a-bbd3-b7216b9bcbf3" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1100" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Basic Auth'" sap:VirtualizedContainerService.HintSize="382,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="03bbafdc-e687-413a-bbd3-b7216b9bcbf3" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="47ca9feb-f381-4670-b254-5530ee196861" ContentHash="d__Fr_3C5EmJ3cvn0fM9hg" CvTextArea="230, 647, 114, 21" CvTextArgument="Basic Auth" CvType="Text" DesignTimeRectangle="475, 271, 75, 17" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Basic Auth' parentid='content' tag='A' type='' class='' check:text='Basic Auth' /&gt;" Guid="b85f8e66-c843-4ed4-b31e-f2fe265638ca" InformativeScreenshot="2f7995821a468d076034547da3960487.png" Reference="Ymf6ksMtEkuOJNO52peugg/KKE1oEnlkUe2BVxqL9Ygag" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Internet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="538b8c1c-dd41-4aff-8685-805aaee42622" CvTextArea="474, 271, 244, 18" CvTextArgument="Basic Auth (user and pass: admin)" CvType="Text" DesignTimeRectangle="475, 267, 970, 25" ElementType="ListItem" FullSelectorArgument="&lt;webctrl idx='3' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='' aaname=' (user and pass: admin)' check:innerText='Basic Auth (user and pass: admin)' /&gt;" Guid="69a7d1a1-0187-4f76-8503-cbd671b9c8f9" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Element 'SigIn label'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="the-internet.herokuapp.com/basic_auth" CVScreenId="5959cd49-bb14-41a0-a346-f799af107308" ContentHash="4SYGhfu_w0qr5_JNhgkQlg" CvTextArea="759, 173, 76, 27" CvTextArgument="Sign in" CvType="Text" DesignTimeRectangle="761, 165, 420, 37" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Sign in' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Sign in' role='grouping' automationid='' check:fulltext='Sign in' /&gt;" Guid="0c9489b5-d26a-4cb9-adc1-a3bc910010f1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAagAAAApCAYAAABgKb0JAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAPPSURBVHhe7d0xlppQGIbh7COzDBaQWYCVCxirqaio3ICVlZVptKKi0sZpnIoKG2ywwcpZyBdgRrwgGOaomZszb/E0wQtJ43su/pAfPx8eBACAbQgUAMBKBAoAYCUCBQCwEoECAFiJQAEArESgAABWIlAAACsRKACAlQgUAMBKBAoAYCUCBQCw0g0C1dPvMNXb4aC3ZCHPafqMBbxA2/zveEgVTvvNnwEAWKMlUI96Hvl6iRLt0/xL/WSfJtqupnoqPztVWB5PtPTM89jDWySnf0c4bfwMAMAe54FyPAXxx46oTb5TKtf0NF59fPnHNu+gfG2K2LKDAoD/QS1Qxu26QqLNKtB8NisFq1DbKDACBQDA7VUD1ct2GWWcIs37xjEAAP6haqC8hXbHQFVu4wEA8G9VAzU4Trq976D8TjsoT8vkuCbU77Pjjp7GgcLEuHWYJgpnrn6ZQawMLhiDF0UoH+XO1tqW1zloFy00HjjGmr+Yhqe1C884dodrAQCudvYb1Dw6fTG/HWK9TrOQVD5TdylQTnV6rmYXRp0CNW87R5pdr2de74KOgbrJtQAAV6sFKtOf6NXYPbx/OWehmnnqNU7otQfKGa+1L8+T7Zr8kdzBQE/uSH5YC0FboArG2uFxGu/dNng21l3QJVCFG1wLAHC180DlHFfzekByaSTffax9vi1Q5m4s1eukvs7RaGXc9rsQqM2sOhZeCV/kq2cca9UxUDe5FgDgas2B+vDreaLgLFT154jaAlW9ddY4cNHlN6jDWmNzTf1427nrOgXqRtcCAFztYqCOnMFYy8h8PsocoGgJVGt8DJ2HJIw1nY436DwkYazpdBwAcA+dAvWuXxmg2AaDjz8nUACA2/tEoDKNX/ItgTJH1tt+uxmvy/MRKACAqRoo19fSb5vW++QO6mGkl3ICLn+JbP05or58c6SdQAEADNVAlbfcau/g8xcKKy+QjRU8H9e1Bar2BvHimaqhnorx7ale6i+kJVAAAENLoC5J9DrpMsWXcbJjsbnWlO2qZvwGBQBoVvsN6lHuJNBLGGuXVnc4+yRWuJjK69Vv1V0IVM4ZaByE2flO59rFa83z56mMIN49GgQKAP4rnxuSuDVjSKIaDQDAd/elgRoab5LYzHgZKwDg5MsC5bjVN6fPeRErAMBw30B5gTZxqKU/0TCf3isMNcl/kyrjdNB+NZLTtB4A8G3dOVB/nwrcR77cxueuAADf2X0D1fPkr0Jtzf+ssJAWk3z+aMDOCQDQ6EuHJAAAaEOgAABWIlAAACsRKACAlQgUAMBCD/oDYtE25fOdlzMAAAAASUVORK5CYII=" InformativeScreenshot="9b034b2ceb8bff62375532bfca629b8d.png" Reference="Ymf6ksMtEkuOJNO52peugg/qaG43jwscEe3WowSgwoJRg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='the-internet.herokuapp.com/basic_auth - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="5959cd49-bb14-41a0-a346-f799af107308" CvTextArea="759, 219, 285, 21" CvTextArgument="https://the-internet.herokuapp.com" CvType="Text" DesignTimeRectangle="761, 213, 420, 31" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='https://the-internet.herokuapp.com' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='https://the-internet.herokuapp.com' role='text' automationid='' check:fulltext='https://the-internet.herokuapp.com' /&gt;" Guid="6414271a-b91c-4e63-89d3-41ed2d4b4030" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAagAAAAjCAYAAADBsp5vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAXqSURBVHhe7ZrLdRs7DEDTx3OVasbepwGlBtVgF6AUMm/4mwFBgENZxxat3MVdhAQJEF9lkl//vbwsAAAAs8GAAgCAKWFAAQDAlDCgAABgShhQAAAwJQwoAACYEgYUAABMCQMKAACmhAEFAABTwoACAIApUQPqdblcr8vlVa79Y5zOy8f1fflzMvbgS3i7XJe/l1dz7yGQAwBT8HQD6nR+X/5eL8vbjXsb39ichuz5B2BAAYDF5weUV8QPLe7T8uf9unycTwN7zlt/yICKZ9/Py8nYm4ZBXzKgAMDiuQZUT3ez9/gBdQ8MqC/kh+QAwLPzVAOq1+jaPQbUl8OAAoA7cAdU+vy0No6ILNb0qWzfS3ycfzvr6ZPa3lCTjl3G+MT1ehH7UibrNhtzb7jWe7EhVvevlAYpmlMtZ3+K03cNDfdM8rG4d0R3lJF7gbqZ1rFrP3lusdjuyudvfLuvx8sR69Nr1hX8r95myx/lzx7r7Q3GD5P9vKFH+GFbKzmZc6+JXSXnnBXUebLbfBQ7P0aDudfYomy1Ytf8eDB8HCh1qXQM2QVgYA6okFSyMFISqmK0iriznpri+7on7ynFINaMAn+7lH1/QG1NV637e3uRSVnZJPc9S6+xlgtztCCbJjes239vE6t8p4znFgt9/gb9I3rSmpEjiq3JHfnS0NHmZorrx/q+Jg75ztbG9Q7ZhLXdxrkmdoUmf4P/arl0VsrsNle2ufaG2NW+SXf2c8+SOZ0vux2WL0pPqOK/94ntrhKb9Q1Stn0rwDj2gNK/mHLyVcmvi/hg3U/UXJy5CKOcbpyHpCZaFfLhXtLbFHQpNC2vG0/TiBKxYQ7an3xy0OQDhi7TT1acVrQeNxaj+gf1JDlDj6IdMoE8GEUu2r6t88fN4V6OmO/Lf4577bnmrQUnL2p07nk2ez6139HNPSdmknjesKE9a9ub4qjfruMDMM7gv0EZSeY1H2c9FppZPKoR5YZgFoqHZ0t3z3lr9127vFfMdUPJhSwRPhhu6Ep3wPKn62PVNBu9hUH9o3rc+xSeL+uG6+WmHmRGrga6tqgzRfY1vdtqrq4PvQGVfShzYb/Xe9vKDT51bTrYS3RscHysZW0dTjwABphvQAWqYu4VVcL95dfdc97afVeRzzZvNmqObQ40BT2kO2H5M761saWw3+vGYlD/qB73PoUXo7he7Mw22DpXDpqnOzgiKr+lLjNnvWa80uhJd1tr3zmgKl9aqBjXMKDgMUwzoOwELoPALshEp7g/s9d91y7vNdVbaAp6UHfA8qfv4xpXblD/qB73PsXQgOrGUnJjXCPpTD2ggmxaN98aB8fxgLIHg9LXe5vW03lHLy7HMevYwICCB/G9A8qV9woj0Cuce4rSubf7rl3eLsbbaO4Y1B0w39b8erdx/TKqf1CPe59ibEDpJulxQw4X9Hsqu9O5UV9Hm8W6OaDi2XZAHftgJceifceBfw5j1jmv4+/42K6Jjt8BDvj8gHITz15PyauLNcnKtep/FQWqwspFtMmnP9vJ39vb95uC9JqqU6RW82n9Z3PPgLIbTn6TbhLr+Yvww90DalCPnQv5rNA/NqBWmsZe5KQdSacZA+t8flu7JvyQZWqfGfHP98u4pBhLn+Zzlc59TdpdaqZ6S7FFxUkPxu1O4ddWRtVbubuKRXtPWdM+bvI5kmR1zABGuGNA7QVUF5u9HtdCMW9FnFGNSZ5NyIJSzU03EklvryBtKXZ453Lx1r4pjVpQNbE+TUF/Wnd9JjUiSd00tliItchN+o/1BNpcuGNABbItUm+dl14OZ4zzjazlh+2cWNd3hTfEnOrFI/hI11OxWeeTF4uwns7U90rZvH9UX00e6Hu1f3cZ7bcmnyNJtr0D4Bg1oL4OtynegdfYjvYA5sJu+CbW8AR4Un7ugMq/Xs2i7u0BTAcDCsDiR/8NCuA5YEABWDCgAB4OAwrA4tsGFAAAwC0woAAAYEoYUAAAMCUMKAAAmBIGFAAATAkDCgAApoQBBQAAE/Ky/A+uPCZmL7xiogAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="03bbafdc-e687-413a-bbd3-b7216b9bcbf3" Text="[in_user]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="the-internet.herokuapp.com/basic_auth" CVScreenId="5959cd49-bb14-41a0-a346-f799af107308" ContentHash="Yi7yFFDIsUueGlI63qQGrQ" CvElementArea="858, 263, 326, 61" CvType="InputBox" DesignTimeRectangle="860, 267, 321, 55" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Username' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Username' role='editable text' automationid='' /&gt;" Guid="cd233e40-f409-49a9-a7df-4f0bdcc75a17" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUUAAAA7CAYAAADsK5hYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAASYSURBVHhe7dtdTxRXGMDxfo+SuugCu+tXoCwtNYIur9pqm7RJW20iUKAs0iAs1GjSWKyiF76U2gvp1kIFXJaXSoLyXqj2S9gP8nTObPb0jDMYL7xg5/wvfiE5c57D3T8zmdm33i4rEwBAwWtFsSIWk48+/Uwuj92U8alpmVpekT///gcA9jXVKtWsS9dvuA2LVlYGNs70yiiqGPYODcv89m7gPwSAUpLf2pGewYxEK/aO455RPN7aJjNP1wMPBoBSNv1kTeqbWwLbFxjFs909vkMmlx7L6K070t6blvrGRjkUjfrmAGC/UI061tQknek+uXr7rtOwZV/XPj/X4ZvzRfFMZ5dnaMF5dO4bHJJIeblnHwCUEtWw/syw2zSzcV+0e8PoieKR4ylZ2n2uN088mpPqZNIzAACl7N3aWsnOzevOLe48k6ONTfq6jqJ6K6Oes4sbf8svSDyR0BsBICwShw9LNr+oeze9sqrfTOsodl8Y0hvmt3Yk+X6d5xAACJP36uo8j9LdAxfcdTeK7xyIyNzGtr7YnxnxHQAAYTPw3UXdvdnVDaeFBwpRTJ04qS/kN7d5swzAChXOI7N6Mi72T32K6Ebx4rUxvXg3+yBwGADC6OfJP3T/Rn64Woji/dz/b2L6hjKBgwAQRv3GI/QvM7lCFM23zkdTjYGDABBGKeeRudg/9VtpN4rFBSUSiQQOAkAYVVbFPA30RfHlAQAIO7OBbyyK/754EbgOAPud2UCiCMB6ZgOJIgDrmQ0kigCsZzaQKAKwntlAogjAemYDiSIA65kNJIoArGc2kCgCsJ7ZQKIIwHpmA4kiAOuZDSSKAKxnNpAoArCe2UCiCMB6ZgOJIgDrmQ0kigCsZzaQKAKwntlAogjAemYDiSIA65kNJIoArGc2kCgCsJ7ZQKIIwHpmA4kiAOuZDSSKAKxnNvCNRREASpXZQKIIwHpmA4kiAOuZDSSKAKxnNtAXxUh5eeAQAIRR+cGDnga6UZxaXtELH9Q3BA4CQBgdaTim+zfptNCN4r2HM3qxozcdOAgAYdSZPq/7Nz75sBDFkdEf9eK1Oz8FDgJAGI2N39P9y1wZLUSx7eNP9OKDhSU5FI0GDgNAmESd1v2++Fj3r+XU6UIUoxWVsrT73F1Uf8+2dwQeAABhcu7rLk/7VAvdKCrDzm1jsZa5tQ2prqnxHQAAYVGTrJXc+qbu3uD3V9x1HcVYIiG5jS29YWI2J7F43HMIAIRB3OldNr+geze7uiFV8YR7TUdRaTz5ob6VVLJz81KdTOrrAFDqVNNU24qdU81raG7R1z1RVL7q+UZvVvKbf0lP/7d81A2gpKmGpQcG3aaZjTvT2eXZ54ui8mVHpyzuPPMMPnJuL2/d/1XSgxlJtbZJVSzmmwOA/aIqHpemthNyfnhEbk9k3YaZTVONU617eS4wikrKOWzm6brnEAAIg+kna1Lf1BzYvj2jqFQ4d4O9mWGZ394NPBgASkl+a0d6nKdd9elNUPOUV0axSMVRfeB9eeymjE9Ne34rDQD7lWqVatal6zek9dRpiVbuHcOi14oiANihTP4D9RMxkfho2IAAAAAASUVORK5CYII=" InformativeScreenshot="062db7da442ec3046e0ff9d2437b9b7e.png" IsResponsive="True" Reference="Ymf6ksMtEkuOJNO52peugg/xc1ia0a4iEGL-kK2_zyNZg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='the-internet.herokuapp.com/basic_auth - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="5959cd49-bb14-41a0-a346-f799af107308" CvTextArea="761, 285, 81, 16" CvTextArgument="Username" CvType="Text" DesignTimeRectangle="761, 279, 81, 31" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Username' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Username' role='text' automationid='' check:fulltext='Username' /&gt;" Guid="0250552d-4042-4226-a92e-57264934c3d2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAAjCAYAAADljkaGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAHmSURBVGhD7ZXbkcMgDEW3j02VbsYpw6mBGpwCkkJY3hYSymYG9Hc/zszGgLg6YO/P7+3mwVog1QBINQBSDYBUAyDVAEg1AFINgFQDINUASDWASd29e73889jIMznu9tEYqECqAZBqAKQasEBqfvYmcOnbcXbjvH4aPw+/bYd/pjmnf2xhLP3Of9/dtf79cv5O1rcabTxSarQ5V/auVtw3ju+OrNUuDu9V5ohMSh3MD+FooNwA2byIo2uy1NM/a4Nsbt/k5h9neNbNDTnYWrEvEdJq1Sxhb1ovHxA7lEFuuUdmTiq5SXJuoAShkiM59BVm2ERk0Egi3aoP+0ZEtiLV7d28LIbXkh7SPH7oiq8lN1V7DfIN5EECTAqX3NAOTTks/gr3N5xnz4z35h7Ga9tbww5qwTe1FA7P+ybqLdBgUkfyv5VafndyhPgJqa2+wmepY/MNrclCDniFUWUx5qQqmVdKVdZqMKnaJmTsH0npdtYGv/n2BSyk5j5WSf3nsjGE1FpQNFm+V12o0JzrPhVKGB6arZuTOvgvXMbXSQ2U/rtngbuTF3AgNVJlUORiGr7CN43Ib2tfa1aqyBtriTmTUiNf9qtIBTNAqgGQagCkGgCpBkCqAZBqAKQaAKkGQKoBkLqcm/8D/0QKyOdmNeQAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="03bbafdc-e687-413a-bbd3-b7216b9bcbf3" SecureText="[(New System.Net.NetworkCredential(&quot;&quot;,in_password)).SecurePassword]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="the-internet.herokuapp.com/basic_auth" CVScreenId="5959cd49-bb14-41a0-a346-f799af107308" ContentHash="g1Zb4D2rKkSRdnoY_0dAyw" CvElementArea="858, 337, 325, 58" CvType="InputBox" DesignTimeRectangle="860, 339, 321, 55" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FullSelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Password' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Password' role='editable text' automationid='' /&gt;" Guid="a76d05fe-144d-46bc-8ba7-b4b550402f11" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUUAAAA7CAYAAADsK5hYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAN5SURBVHhe7dtLT+JQGIDh+R1iIlDwUpTByGIUkERiMuUOKupiiG40ARMuIfHnf9NzJjRfbTXOTuq7eBK/08vyzSmtP1Lb2wIA+IcoAoBCFAFA+VQUHceRVqsl8/lcXl9fAWCjzGYzafoNMy2La5z2cRRTKel0OsFNr66vpVqryVGxKE4uF38NAHwBplFFv1Xn9bpt13pT1263Y89fezeKGb+oj4+P9iae50k6k4k9DwA2gWmY12zapo3HY8lks7HnxUYx4188mU5lsVjIz1IpchwANlXp+Ni2bTKZxG72olH0H5kfHh7sRQeuGz4GAAngFgqyWC7lwX8a3npzLBLFbrdrt5cn5XJoHQCSpOw3zrSu6T9S6/VQFM3O0JzU6/dDJwFAEg2HQ1mtVpLL54O1UBT7g4E9gTfLAL6D/O6u3QiaTw7Xa6EoLv1n7NHtbTADQNLd39/bF8vrORRFU8yzSiWYASDpKtWqbV/h8NDOkSju7e8HMwAk3fpdSr1et3Mkiul0OpgBIOnMt4qmfY3LSztHoqhnAPgOTPt+e579mygC+PaIIgAoRBEAFKIIAApRBACFKAKAQhQBQCGKAKAQRQBQiCIAKEQRABSiCAAKUQQAhSgCgEIUAUAhigCgEEUAUIgiAChEEQAUoggAClEEAIUoAoBCFAFAIYoAoBBFAFCIIgAoRBEAFKIIAMqHUUxnMsEMAEmXyWZt+y4aDTtHonjgusEMAEnn+s0z7Ts9PbVzJIqVSiWYASDpqrWabd/+wYGdQ1FcLBYyur0NZgBIuru7O5lOp7KVStk5FMVOtyur1UqcXC5YA4CkyvmtM80bDAbBWiiKu3t7dhvZ6/eDNQBIKhPDt+9SQlE0ms2mPemkXA6tA0CSlP3G2U1grxdaj0Qx5T9X/xmP7e+L6x8eASBJzM5wsVzK09OT7OzshI5Fo+jLZrPy8vIi8/lcSsfHkeMAsKlM00zbTOMcx4kcj42ikcvn5fn52W4vPc/jo24AG800rNlq2aaZHeJ7L5TfjaKRTqdlNBrZm8xmMxkOh1KtVuWoWOQNNYAvzTSq6LfqvF6Xq6sruzs0Lbu5uflwk/dhFNfy/q6x0+nYb3nMTQFgk5h2tdtt+wlOXOO0T0VRcw8P5dfZmVxcXNh/oAaAr6jRaNhWuYVCbMve899RBIAkI4oAENiWv4pGvKlnEn4TAAAAAElFTkSuQmCC" InformativeScreenshot="e88e9045ec177d237689100f1d3e4966.png" Reference="Ymf6ksMtEkuOJNO52peugg/iDevmchB5Ummw_X9FE680w" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='the-internet.herokuapp.com/basic_auth - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="5959cd49-bb14-41a0-a346-f799af107308" CvTextArea="759, 356, 76, 18" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="761, 351, 75, 31" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Password' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Password' role='text' automationid='' check:fulltext='Password' /&gt;" Guid="d52edfe3-b14a-4f33-889a-6e47c5bcc06b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAjCAYAAADVAlenAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAItSURBVGhD7ZbbdcMwCIa7Rz2ll3HGsGfQDM4A6SCqJHQBhFzH5PTFPPznJBhx+SByvr6nyZuuyeApZPAUMngKGTyFDJ5CBk8hg6eQwVPI4Clk8E5p8e718s91JnYGb/bb/vI/wZHK+Qfxu5vegecWZJv8w0WAu99m7HsnKeCNDt9HKnh5+wT7PfRReMLduK9+Jmd6H5ocCsLP3RLs8+qf5TOKB1cHu3uTL7tOFkdiStfNvO5Qb87FfSBXk1s++bMNBYogOFwcJxTq6hmhmBATgEk1tEFgqBVC/i7dzclHPLf752jgxN6GfAGeFLAXbQQS8u2pkjYGCRpGW5b8A9wApzUAddXvBzETVFQ/xBd809YK/yzyhp6Dl0lXdZsI4uvdEpc4I0BlmoO/QAxEajbUcDQg+owpQWHxhNypH7FX4ZcSdPrOw4Lk1E8qCMPlifmg6JbirYLP6TmGyraEbxeRBK/zPer9U/DyCvOf5GiaSan4cdwyDFxchZHylbgNJN8SGUjWKXj/sXkivHxuBC/osLmgrvC8WVs8h+zgt1aI1L8BwqqDyN9HtcAQhR7y8PXwyn2FfCBpsNXEwYfEYHHDANqbN/t3xUVbfCMKkOKbUmgyQWIAoTbBJg4y90aeZVtX38U7r2wfAIOgdGotYRWOyc5H8cKiAAaHJDXY1AZZ1EMew4vitcfzYPsDnukdGTyFDJ5CBk8hg6eQwVPI4Clk8BQyeAoZPIUM3mVN/heKWPUaJW/GZQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="382,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="03bbafdc-e687-413a-bbd3-b7216b9bcbf3" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="the-internet.herokuapp.com/basic_auth" CVScreenId="5959cd49-bb14-41a0-a346-f799af107308" ContentHash="74-UeWzB6UGoXTgHNBLbZw" CvElementArea="945, 426, 118, 65" CvTextArea="972, 449, 64, 22" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="950, 429, 110, 58" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Sign in' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Sign in' role='dialog' /&gt;&lt;ctrl name='Sign in' role='push button' automationid='' check:fulltext='Sign in' /&gt;" Guid="19101e61-9d69-4bb8-a300-ef8833b7ba4a" ImageBase64="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" InformativeScreenshot="8518baaea04848168e24cab11692f784.png" Reference="Ymf6ksMtEkuOJNO52peugg/T-MAr_SjC0CYE_kv7c10zA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='the-internet.herokuapp.com/basic_auth - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Label 'Congratulations'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="the-internet.herokuapp.com/basic_auth" CVScreenId="3f8932b3-3ad8-42eb-8f0a-b1f538e08772" ContentHash="bSXRCl7hN0SVo44Ng-8G_Q" CvTextArea="242, 333, 585, 25" CvType="AnyWordGroup" DesignTimeRectangle="244, 325, 1455, 38" DesignTimeScaleFactor="1.5" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' /&gt;" Guid="fcaa537a-bb76-46e6-8213-188ccb917634" InformativeScreenshot="08f9037bd5e414cd198a6e8d558379c9.png" Reference="Ymf6ksMtEkuOJNO52peugg/yVqMFSputE-6GVHpIMkmfA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Internet' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="3f8932b3-3ad8-42eb-8f0a-b1f538e08772" CvTextArea="243, 257, 210, 36" CvTextArgument="Basic Auth" CvType="Text" DesignTimeRectangle="244, 248, 1455, 57" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='' aaname='Basic Auth' check:innerText='Basic Auth' /&gt;" Guid="479db90b-9df2-4aa4-817f-74a3f4b7f369" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1150" BrowserType="Chrome" ContentHash="e44YowwkgkO3vM2FcR0gZQ" IconBase64="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" InformativeScreenshot="72f370aa3ee0995919c66b965c9720ec.jpg" Reference="Ymf6ksMtEkuOJNO52peugg/zG1wkTmHWEeJEHKvKH90rw" Selector="&lt;html app='chrome.exe' title='The Internet' /&gt;" Title="The Internet" Url="https://the-internet.herokuapp.com/" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

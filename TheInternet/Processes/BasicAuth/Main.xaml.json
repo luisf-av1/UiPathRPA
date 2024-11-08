@@ -1,0 +1,33 @@
+{
+  "DisplayName": "Main",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_user",
+      "DisplayName": "in_user",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "admin",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_password",
+      "DisplayName": "in_password",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "admin",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
